@@ -1,0 +1,9 @@
+model,bucket,n,compile_rate,all_pass_rate,mean_test_pass,is_copy_rate,n_with_speedup,mean_speedup,median_speedup,max_speedup
+qwen-base,short,200,0.845,0.39,0.475,0.29,78,0.9966,0.996,1.073
+qwen-base,medium_short,200,0.75,0.33,0.397,0.205,66,1.0094,1.0065,1.1102
+qwen-base,medium_long,200,0.7,0.28,0.328,0.225,56,1.0043,1.0013,1.0673
+qwen-base,long,200,0.53,0.205,0.229,0.155,41,1.0022,1.0055,1.0677
+supercoder,short,200,1.0,0.755,0.833,0.0,151,1.0035,1.0004,1.0925
+supercoder,medium_short,200,0.995,0.835,0.918,0.0,167,1.0017,1.0024,1.154
+supercoder,medium_long,200,0.99,0.745,0.864,0.0,149,0.9995,1.0015,1.3717
+supercoder,long,200,0.89,0.645,0.7,0.0,129,0.9993,0.9995,1.0708
