@@ -28,10 +28,12 @@ BUCKET_ORDER            = ["short", "medium_short", "medium_long", "long"]
 PROMPT_TEMPLATE = (
     "Given the following C code and assembly code, your task is to generate "
     "highly optimized x86-64 assembly code.\n"
+
     "C Code:\n\n"
     "```c\n{c_code}\n```\n\n"
     "Assembly Code:\n\n"
     "```assembly\n{unopt_asm}\n```\n\n"
+
     "Only output the (lazy edit) optimized assembly code. Do not include any other text. "
     "Wrap the assembly code "
     "in ```assembly``` tags."
@@ -54,7 +56,7 @@ PROMPT_TEMPLATE = (
     "- For deletions: show context before and after, omit the deleted lines\n"
     "- Batch multiple edits to the same file in one call\n"
 
-    "\nOptimized Assembly Code:\n"
+    "\nOptimized (lazy edit) Assembly Code:\n"
 )
 
 app = modal.App("long-context-inference")
