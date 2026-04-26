@@ -1,0 +1,48 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "problem_id": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "submission_id": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "c_code": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "c_loc": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "test_cases": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "num_test_cases": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "bucket": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "bucket_idx": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "in_supercoder_train": {
+      "dtype": "bool",
+      "_type": "Value"
+    },
+    "in_supercoder_val": {
+      "dtype": "bool",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}
