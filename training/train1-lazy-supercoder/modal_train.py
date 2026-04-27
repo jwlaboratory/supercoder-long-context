@@ -6,18 +6,18 @@ Reward: avg speedup if all tests pass, else 0
 Data:   random1123anonymized/supercoder (HF)
 
     modal run modal_train.py
-    MODAL_TRAIN_GPU="h100:4" modal run modal_train.py
+    MODAL_TRAIN_GPU="a100:4" modal run modal_train.py
 
 """
 from __future__ import annotations
 import os, subprocess
 from pathlib import Path
-import modal
+import modal  # type: ignore[import-not-found]
 
 MINUTES  = 60
 HERE     = Path(__file__).resolve().parent
-SHARED   = (HERE / "../shared").resolve()
-DATA_DIR = (HERE / "../data").resolve()
+DATA_DIR = (HERE / "data").resolve()
+REWARD   = (HERE / "reward.py").resolve()
 VERL_DIR = (HERE / "../verl").resolve()
 
 BASE_MODEL      = "Qwen/Qwen2.5-Coder-7B-Instruct"
@@ -28,6 +28,7 @@ VAL_FILE        = "/data/sc_val.parquet"
 app = modal.App(EXPERIMENT_NAME)
 hf_secret       = modal.Secret.from_name("huggingface", required_keys=["HF_TOKEN"])
 wandb_secret    = modal.Secret.from_name("wandb")
+morph_secret    = modal.Secret.from_name("morph", required_keys=["MORPH_API_KEY"])
 checkpoints_vol = modal.Volume.from_name("debug-rl-checkpoints", create_if_missing=True)
 data_vol        = modal.Volume.from_name("debug-rl-data",        create_if_missing=True)
 hf_cache_vol    = modal.Volume.from_name("huggingface-cache",    create_if_missing=True)
@@ -43,18 +44,18 @@ image = (
         " tabulate fire 'ray[default]' psutil cachetools numpy",
         "pip install wheel && pip install flash-attn==2.7.4.post1 --no-build-isolation",
         "pip install -e '/verl_src[vllm]'",
-        "pip install 'transformers>=4.40,<5'",
+        "pip install 'transformers>=4.40,<5' openai",
     )
     .env({"HF_XET_HIGH_PERFORMANCE": "1"})
-    .add_local_file(str(SHARED / "reward.py"), "/reward.py")
+    .add_local_file(str(REWARD), "/reward.py")
 )
 
-GPU = os.environ.get("MODAL_TRAIN_GPU", "h100:4")
+GPU = os.environ.get("MODAL_TRAIN_GPU", "a100-80gb:4")
 
 
 @app.function(
     image=image, gpu=GPU, timeout=24 * 60 * MINUTES,
-    secrets=[hf_secret, wandb_secret],
+    secrets=[hf_secret, wandb_secret, morph_secret],
     volumes={
         "/data":                    data_vol,
         "/checkpoints":             checkpoints_vol,
@@ -125,12 +126,10 @@ def main() -> None:
 def _ensure_sc_data():
     train_pq = DATA_DIR / "supercoder_train.parquet"
     val_pq   = DATA_DIR / "supercoder_val.parquet"
-    if not train_pq.exists():
-        subprocess.run(["uv", "run", "python", "supercoder_to_parquet.py", "--split", "train",
-                        "--output-parquet", str(train_pq)], cwd=SHARED, check=True)
-    if not val_pq.exists():
-        subprocess.run(["uv", "run", "python", "supercoder_to_parquet.py", "--split", "val",
-                        "--output-parquet", str(val_pq)], cwd=SHARED, check=True)
+    missing = [str(path) for path in (train_pq, val_pq) if not path.exists()]
+    if missing:
+        raise FileNotFoundError(f"Missing parquet data files: {', '.join(missing)}")
+
     with data_vol.batch_upload(force=True) as u:
         u.put_file(str(train_pq), "sc_train.parquet")
         u.put_file(str(val_pq),   "sc_val.parquet")

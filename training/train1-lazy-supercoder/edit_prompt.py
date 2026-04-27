@@ -35,9 +35,10 @@ PROMPT_TEMPLATE = (
     "Assembly Code:\n\n"
     "```assembly\n{unopt_asm}\n```\n\n"
 
-    "Only output the (lazy edit) optimized assembly code. Do not include any other text. "
-    "Wrap the assembly code "
-    "in ```assembly``` tags.\n\n"
+    "Only output the lazy edit update in this exact format:\n"
+    "```assembly\n"
+    "<lazy edit assembly update>\n"
+    "```\n\n"
     
     "How to lazy edit:\n"
     "Use \"// ... existing code ...\" to represent unchanged code blocks. "
@@ -58,7 +59,7 @@ PROMPT_TEMPLATE = (
     "- For deletions: show context before and after, omit the deleted lines\n"
     "- Batch multiple edits to the same file in one call\n"
 
-    "\nOptimized (lazy edit) Assembly Code:\n"
+    "\nOptimized lazy edit assembly update:\n"
 )
 
 
