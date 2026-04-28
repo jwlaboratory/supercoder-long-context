@@ -273,7 +273,7 @@ def eval_model(
                 # Morph merge failed
                 asm = ""
         else:
-            asm = raw_response.replace("```assembly\n", "").replace("```", "")
+            asm = _strip_assembly_fence(raw_response)
 
         # Compile stderr capture
         compile_stderr = ""

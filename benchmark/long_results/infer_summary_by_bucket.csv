@@ -1,0 +1,13 @@
+model,bucket,n,compile_rate,test_pass_rate,mean_correctness,n_speedup_measured,mean_speedup,geo_mean_floor1,copy_rate
+qwen-base,short,50,0.84,0.36,0.264,0,,1.0,0.34
+qwen-base,medium_short,50,0.76,0.3,0.098,0,,1.0,0.2
+qwen-base,medium_long,50,0.8,0.28,0.166,0,,1.0,0.3
+qwen-base,long,50,0.5,0.2,-0.306,0,,1.0,0.14
+supercoder,short,50,1.0,0.7,0.796,0,,1.0,0.0
+supercoder,medium_short,50,1.0,0.82,0.81,0,,1.0,0.0
+supercoder,medium_long,50,0.98,0.72,0.808,0,,1.0,0.0
+supercoder,long,50,0.84,0.6,0.472,0,,1.0,0.0
+lazy-morph,short,50,1.0,0.72,0.814,0,,1.0,1.0
+lazy-morph,medium_short,50,0.98,0.8,0.77,0,,1.0,0.96
+lazy-morph,medium_long,50,0.96,0.74,0.816,0,,1.0,0.94
+lazy-morph,long,50,0.76,0.62,0.404,0,,1.0,0.68
