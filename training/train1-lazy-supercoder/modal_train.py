@@ -21,7 +21,7 @@ REWARD   = (HERE / "reward.py").resolve()
 VERL_DIR = (HERE / "../verl").resolve()
 
 BASE_MODEL      = "Qwen/Qwen2.5-Coder-7B-Instruct"
-EXPERIMENT_NAME = "train1-lazy-supercoder"
+EXPERIMENT_NAME = "train2-lazy-supercoder"
 TRAIN_FILE      = "/data/sc_train.parquet"
 VAL_FILE        = "/data/sc_val.parquet"
 
