@@ -12,13 +12,15 @@ Usage
     modal run infer.py --do-speedup           # include hyperfine speedup
     modal run infer.py --n-samples 50         # quick smoke test
     modal run infer.py --temperature 0.5
+    modal run infer.py --lazy-morph-step 300  # evaluate a specific lazy checkpoint
 
 Checkpoint paths (inside the ``debug-rl-checkpoints`` Modal volume):
     --supercoder-ckpt    default: exp1-train-supercoder/global_step_420/hf_model
     --lazy-morph-ckpt    default: auto-detect latest train2-lazy-supercoder step
+    --lazy-morph-step    default: 0 (latest); set 300 for global_step_300
 
 Merge before running (if not done):
-    modal run merge_checkpoint.py
+    modal run merge_checkpoint.py --step 300
 
 Output (written locally)
 ------------------------
@@ -410,6 +412,8 @@ def main(
     do_speedup: bool           = False,
     supercoder_ckpt: str       = "",
     lazy_morph_ckpt: str       = "",
+    lazy_morph_step: int       = 0,
+    output_suffix: str         = "",
     out_dir: str               = "",
 ) -> None:
     import numpy as np
@@ -446,6 +450,7 @@ def main(
             tag="lazy-morph",
             model_path=lazy_morph_ckpt,
             exp_name=LAZY_EXP,
+            exp_step=lazy_morph_step,
             is_lazy=True,
             **shared,
         ),
@@ -467,9 +472,10 @@ def main(
         "morph_called", "morph_success",
     ]
     summary_rows = []
+    suffix = output_suffix
 
     for tag, results in all_results.items():
-        csv_path = out_path / f"infer_results_{tag}.csv"
+        csv_path = out_path / f"infer_results_{tag}{suffix}.csv"
         with open(csv_path, "w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=detail_fields, extrasaction="ignore")
             writer.writeheader()
@@ -513,7 +519,7 @@ def main(
 
         summary_rows.append(row)
 
-    summary_path = out_path / "infer_summary.csv"
+    summary_path = out_path / f"infer_summary{suffix}.csv"
     summary_fields = [
         "model", "n_samples", "compile_rate", "test_pass_rate", "mean_correctness",
         "n_speedup_measured", "mean_speedup", "max_speedup", "mean_effective_speedup",
