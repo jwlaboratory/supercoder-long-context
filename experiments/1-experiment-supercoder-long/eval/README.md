@@ -101,7 +101,9 @@ results/figures/speedup_distribution.png
 - The prompt is identical to supercoder training data (`Given the following C
   code and assembly code, your task is to generate highly optimized x86-64
   assembly code…` + ` ```c… ``` ` + ` ```assembly… ``` `). C is compiled to
-  unoptimized asm inside the Modal container with `gcc -S -O0` for a
+  baseline asm inside the Modal container with `gcc -S -O3` (matches the
+  SuperCoder paper baseline; the parquet field `unoptimized_assembly` is also
+  -O3 output, despite the misleading name) for a
   deterministic template across models.
 - `b-benchmark-local.py` defaults to `--hyperfine-runs 5 --warmup 2
   --max-tests-bench 3`. Bump `--hyperfine-runs` for stable timings on small

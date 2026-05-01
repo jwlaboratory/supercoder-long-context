@@ -1,9 +1,12 @@
 """Compare Qwen-base vs SuperCoder vs Lazy+Morph on the CodeNet balanced dataset,
 bucketed by C code length (short / medium_short / medium_long / long).
 
-For each sample the container compiles the C code to unoptimized x86-64 assembly
-(gcc -S -O0), builds the model prompt, generates optimized assembly, then
-evaluates correctness and optionally measures speedup.
+For each sample the container compiles the C code to baseline x86-64 assembly
+with `gcc -S -O3` (matches the SuperCoder paper baseline; the data field
+`unoptimized_assembly` in supercoder parquets is also -O3 output despite the
+misleading name), builds the model prompt, generates optimized assembly, then
+evaluates correctness and optionally measures speedup against the same -O3
+binary.
 
 Usage
 -----
@@ -208,7 +211,7 @@ def run_model(
             with open(c_file, "w") as f:
                 f.write(s["c_code"])
             r = subprocess.run(
-                ["gcc", "-S", "-O0", "-o", s_file, c_file],
+                ["gcc", "-S", "-O3", "-o", s_file, c_file],
                 capture_output=True, text=True, timeout=30,
             )
             if r.returncode != 0 or not os.path.exists(s_file):
@@ -464,6 +467,7 @@ def main(
     do_speedup: bool           = False,
     supercoder_ckpt: str       = "",
     lazy_morph_ckpt: str       = "",
+    lazy_morph_step: int       = 0,
     out_dir: str               = "",
 ) -> None:
     import random
@@ -517,7 +521,7 @@ def main(
     calls = [
         run_model.spawn(tag="qwen-base", model_path=QWEN_BASE, is_lazy=False, **shared),
         run_model.spawn(tag="supercoder", model_path=sc_path, is_lazy=False, **shared),
-        run_model.spawn(tag="lazy-morph", model_path=lazy_morph_ckpt, exp_name=LAZY_EXP, is_lazy=True, **shared),
+        run_model.spawn(tag="lazy-morph", model_path=lazy_morph_ckpt, exp_name=LAZY_EXP, exp_step=lazy_morph_step, is_lazy=True, **shared),
     ]
 
     all_results: dict[str, list[dict]] = {}

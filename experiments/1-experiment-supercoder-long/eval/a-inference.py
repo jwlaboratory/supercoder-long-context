@@ -10,7 +10,7 @@ BOTH models on the same prompts:
                                        Modal volume path or an HF model id.
 
 Each model runs in its own GPU container in parallel. For every sample we:
-  1. compile `c_code` with `gcc -S -O0`  → unoptimized x86-64 assembly
+  1. compile `c_code` with `gcc -S -O3` (matches SuperCoder paper baseline)
   2. build the supercoder prompt (C + unopt asm → optimize)
   3. vLLM generate → optimized assembly
   4. extract asm from ```assembly ...``` fences
@@ -151,7 +151,7 @@ def run_model(
             with open(c_file, "w") as f:
                 f.write(s["c_code"])
             r = subprocess.run(
-                ["gcc", "-S", "-O0", "-o", s_file, c_file],
+                ["gcc", "-S", "-O3", "-o", s_file, c_file],
                 capture_output=True, text=True, timeout=30,
             )
             if r.returncode != 0 or not os.path.exists(s_file):

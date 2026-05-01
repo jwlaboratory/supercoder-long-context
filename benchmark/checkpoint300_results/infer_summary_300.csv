@@ -1,0 +1,4 @@
+model,n_samples,compile_rate,test_pass_rate,mean_correctness,n_speedup_measured,mean_speedup,max_speedup,mean_effective_speedup,geo_mean_speedup_floor1,p25_speedup_floor1,p50_speedup_floor1,p75_speedup_floor1,copy_rate,status_breakdown,morph_call_rate,morph_success_rate
+qwen-base,200,0.64,0.365,-0.078,73,0.9974,1.244,0.9991,1.0055,1.0,1.0,1.0,0.235,"{'COMPILE_FAIL': 72, 'ALL_PASS': 73, 'PARTIAL_0%': 5, 'PARTIAL_40%': 2, 'PARTIAL_30%': 1, 'RUNTIME_ERR': 41, 'PARTIAL_60%': 1, 'PARTIAL_50%': 2, 'PARTIAL_20%': 2, 'PARTIAL_80%': 1}",,
+supercoder,200,0.945,0.93,0.879,186,1.0144,2.1237,1.0134,1.0262,1.0,1.0034,1.0329,0.02,"{'ALL_PASS': 186, 'RUNTIME_ERR': 1, 'COMPILE_FAIL': 11, 'PARTIAL_75%': 1, 'PARTIAL_50%': 1}",,
+lazy-morph,200,0.995,0.99,0.983,198,1.0035,1.3029,1.0034,1.0121,1.0,1.0006,1.0133,0.0,"{'ALL_PASS': 198, 'RUNTIME_ERR': 1, 'COMPILE_FAIL': 1}",1.0,1.0

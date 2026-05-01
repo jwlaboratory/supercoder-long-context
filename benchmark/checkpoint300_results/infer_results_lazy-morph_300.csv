@@ -1,0 +1,6919 @@
+idx,problem_idx,status,compiled,tests_pass,correctness,raw_speedup,effective_speedup,speedup_floor1,is_copy,response_tokens,n_inputs,compile_stderr,response,morph_called,morph_success
+1,-1,ALL_PASS,True,True,1.0,1.0234,1.0234,1.0234,False,253,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+2,-1,ALL_PASS,True,True,1.0,0.9735,0.9735,1.0,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+3,-1,ALL_PASS,True,True,1.0,0.9978,0.9978,1.0,False,184,104,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+4,-1,ALL_PASS,True,True,1.0,1.0275,1.0275,1.0275,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+5,-1,ALL_PASS,True,True,1.0,0.9656,0.9656,1.0,False,202,1,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+6,-1,ALL_PASS,True,True,1.0,0.9795,0.9795,1.0,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+7,-1,ALL_PASS,True,True,1.0,1.0941,1.0941,1.0941,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+8,-1,ALL_PASS,True,True,1.0,1.0795,1.0795,1.0795,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+9,-1,ALL_PASS,True,True,1.0,0.9817,0.9817,1.0,False,226,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+10,-1,ALL_PASS,True,True,1.0,1.0396,1.0396,1.0396,False,207,104,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+11,-1,ALL_PASS,True,True,1.0,1.0486,1.0486,1.0486,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+12,-1,RUNTIME_ERR,True,False,-0.5,,1.0,1.0,False,222,104,,"```assembly
+// ... existing code ...
+movabsq $-1000000000000000000, %rax
+pushq %rbx
+pushq %rbp
+pushq %rbx
+pushq %r12
+pushq %rbx
+pushq %rbx
+pushq %r11
+pushq %r10
+pushq %r9
+pushq %r8
+pushq %rbx
+pushq %rbx
+pushq %r15
+pushq %r14
+pushq %r13
+pushq %r12
+pushq %rbx
+pushq %rbx
+movq %rsp, %rbp
+movq %rsp, %rsp
+subq $160, %rsp
+pushq %rbx
+pushq %rbx
+movq %rbp, %rsp
+xorq %rbp, %rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+13,-1,ALL_PASS,True,True,1.0,1.0028,1.0028,1.0028,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+14,-1,ALL_PASS,True,True,1.0,1.0188,1.0188,1.0188,False,231,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r14,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+15,-1,ALL_PASS,True,True,1.0,1.0231,1.0231,1.0231,False,205,103,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+16,-1,ALL_PASS,True,True,1.0,0.9987,0.9987,1.0,False,202,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+17,-1,ALL_PASS,True,True,1.0,0.9908,0.9908,1.0,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+18,-1,ALL_PASS,True,True,1.0,1.0218,1.0218,1.0218,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+19,-1,ALL_PASS,True,True,1.0,1.0115,1.0115,1.0115,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+20,-1,ALL_PASS,True,True,1.0,1.0287,1.0287,1.0287,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+21,-1,ALL_PASS,True,True,1.0,1.0181,1.0181,1.0181,False,211,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+22,-1,ALL_PASS,True,True,1.0,1.018,1.018,1.018,False,267,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+23,-1,ALL_PASS,True,True,1.0,0.988,0.988,1.0,False,202,105,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+24,-1,ALL_PASS,True,True,1.0,1.0063,1.0063,1.0063,False,201,102,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+25,-1,ALL_PASS,True,True,1.0,0.9634,0.9634,1.0,False,199,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+26,-1,ALL_PASS,True,True,1.0,1.0096,1.0096,1.0096,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+27,-1,ALL_PASS,True,True,1.0,1.0083,1.0083,1.0083,False,231,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r14,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+28,-1,ALL_PASS,True,True,1.0,0.9888,0.9888,1.0,False,207,1,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+29,-1,ALL_PASS,True,True,1.0,0.9996,0.9996,1.0,False,253,105,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+30,-1,ALL_PASS,True,True,1.0,0.9855,0.9855,1.0,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+31,-1,ALL_PASS,True,True,1.0,1.0021,1.0021,1.0021,False,231,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+32,-1,ALL_PASS,True,True,1.0,1.0011,1.0011,1.0011,False,180,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rax
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+33,-1,ALL_PASS,True,True,1.0,1.0207,1.0207,1.0207,False,211,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+34,-1,ALL_PASS,True,True,1.0,0.9897,0.9897,1.0,False,201,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+35,-1,ALL_PASS,True,True,1.0,1.015,1.015,1.015,False,190,103,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+36,-1,ALL_PASS,True,True,1.0,1.0131,1.0131,1.0131,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+37,-1,ALL_PASS,True,True,1.0,1.0186,1.0186,1.0186,False,211,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+38,-1,ALL_PASS,True,True,1.0,0.9965,0.9965,1.0,False,211,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+39,-1,ALL_PASS,True,True,1.0,1.0049,1.0049,1.0049,False,211,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+40,-1,ALL_PASS,True,True,1.0,0.9912,0.9912,1.0,False,253,103,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+41,-1,ALL_PASS,True,True,1.0,1.0004,1.0004,1.0004,False,253,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+42,-1,ALL_PASS,True,True,1.0,0.9988,0.9988,1.0,False,253,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+43,-1,ALL_PASS,True,True,1.0,0.9591,0.9591,1.0,False,202,1,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+44,-1,ALL_PASS,True,True,1.0,0.9935,0.9935,1.0,False,211,105,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+45,-1,ALL_PASS,True,True,1.0,1.0041,1.0041,1.0041,False,211,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+46,-1,ALL_PASS,True,True,1.0,0.9863,0.9863,1.0,False,253,104,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+47,-1,ALL_PASS,True,True,1.0,1.0327,1.0327,1.0327,False,207,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+48,-1,ALL_PASS,True,True,1.0,1.0049,1.0049,1.0049,False,211,1,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+49,-1,ALL_PASS,True,True,1.0,1.0226,1.0226,1.0226,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+50,-1,ALL_PASS,True,True,1.0,0.921,0.921,1.0,False,220,1,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+51,-1,ALL_PASS,True,True,1.0,1.0087,1.0087,1.0087,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+52,-1,ALL_PASS,True,True,1.0,0.9627,0.9627,1.0,False,195,104,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+53,-1,ALL_PASS,True,True,1.0,0.9588,0.9588,1.0,False,207,103,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+54,-1,ALL_PASS,True,True,1.0,1.0084,1.0084,1.0084,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+55,-1,ALL_PASS,True,True,1.0,0.9852,0.9852,1.0,False,217,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+56,-1,ALL_PASS,True,True,1.0,1.0188,1.0188,1.0188,False,253,104,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+57,-1,ALL_PASS,True,True,1.0,1.0117,1.0117,1.0117,False,211,106,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+58,-1,ALL_PASS,True,True,1.0,0.9972,0.9972,1.0,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+59,-1,ALL_PASS,True,True,1.0,1.0048,1.0048,1.0048,False,180,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rax
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+60,-1,ALL_PASS,True,True,1.0,0.9646,0.9646,1.0,False,205,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+61,-1,ALL_PASS,True,True,1.0,0.9737,0.9737,1.0,False,180,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rax
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+62,-1,ALL_PASS,True,True,1.0,1.0344,1.0344,1.0344,False,190,102,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+63,-1,ALL_PASS,True,True,1.0,1.0073,1.0073,1.0073,False,226,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+64,-1,ALL_PASS,True,True,1.0,0.9718,0.9718,1.0,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+65,-1,ALL_PASS,True,True,1.0,1.0066,1.0066,1.0066,False,202,105,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+66,-1,ALL_PASS,True,True,1.0,0.9992,0.9992,1.0,False,225,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+67,-1,ALL_PASS,True,True,1.0,0.9929,0.9929,1.0,False,220,104,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+68,-1,ALL_PASS,True,True,1.0,1.0062,1.0062,1.0062,False,202,1,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+69,-1,ALL_PASS,True,True,1.0,1.0093,1.0093,1.0093,False,231,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+70,-1,ALL_PASS,True,True,1.0,1.0088,1.0088,1.0088,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+71,-1,ALL_PASS,True,True,1.0,0.9987,0.9987,1.0,False,201,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+72,-1,ALL_PASS,True,True,1.0,1.0154,1.0154,1.0154,False,226,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+73,-1,ALL_PASS,True,True,1.0,1.0061,1.0061,1.0061,False,202,90,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+74,-1,ALL_PASS,True,True,1.0,0.9274,0.9274,1.0,False,231,1,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+75,-1,ALL_PASS,True,True,1.0,1.0059,1.0059,1.0059,False,199,104,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+76,-1,ALL_PASS,True,True,1.0,1.0106,1.0106,1.0106,False,184,102,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+77,-1,ALL_PASS,True,True,1.0,1.0194,1.0194,1.0194,False,217,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+78,-1,ALL_PASS,True,True,1.0,0.9737,0.9737,1.0,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+79,-1,ALL_PASS,True,True,1.0,0.9985,0.9985,1.0,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+80,-1,ALL_PASS,True,True,1.0,0.9999,0.9999,1.0,False,253,61,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+81,-1,ALL_PASS,True,True,1.0,0.9861,0.9861,1.0,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+82,-1,ALL_PASS,True,True,1.0,0.9992,0.9992,1.0,False,253,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+83,-1,ALL_PASS,True,True,1.0,0.9952,0.9952,1.0,False,214,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+84,-1,ALL_PASS,True,True,1.0,1.0029,1.0029,1.0029,False,202,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+85,-1,ALL_PASS,True,True,1.0,0.9824,0.9824,1.0,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+86,-1,ALL_PASS,True,True,1.0,0.9954,0.9954,1.0,False,214,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+87,-1,ALL_PASS,True,True,1.0,0.9303,0.9303,1.0,False,208,1,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+88,-1,ALL_PASS,True,True,1.0,0.9564,0.9564,1.0,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+89,-1,ALL_PASS,True,True,1.0,0.973,0.973,1.0,False,205,106,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+90,-1,ALL_PASS,True,True,1.0,0.953,0.953,1.0,False,207,105,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+91,-1,ALL_PASS,True,True,1.0,0.9693,0.9693,1.0,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+92,-1,ALL_PASS,True,True,1.0,0.9957,0.9957,1.0,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+93,-1,ALL_PASS,True,True,1.0,0.9972,0.9972,1.0,False,226,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+94,-1,ALL_PASS,True,True,1.0,0.9947,0.9947,1.0,False,252,104,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+95,-1,ALL_PASS,True,True,1.0,0.9949,0.9949,1.0,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+96,-1,ALL_PASS,True,True,1.0,0.9958,0.9958,1.0,False,253,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+97,-1,ALL_PASS,True,True,1.0,1.0135,1.0135,1.0135,False,202,1,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+98,-1,ALL_PASS,True,True,1.0,1.0008,1.0008,1.0008,False,214,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+99,-1,ALL_PASS,True,True,1.0,1.0057,1.0057,1.0057,False,226,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+100,-1,ALL_PASS,True,True,1.0,1.0145,1.0145,1.0145,False,211,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+101,-1,ALL_PASS,True,True,1.0,0.9992,0.9992,1.0,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+102,-1,ALL_PASS,True,True,1.0,0.9328,0.9328,1.0,False,211,1,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+103,-1,ALL_PASS,True,True,1.0,1.0155,1.0155,1.0155,False,207,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+104,-1,ALL_PASS,True,True,1.0,0.9974,0.9974,1.0,False,237,14,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+105,-1,ALL_PASS,True,True,1.0,0.9272,0.9272,1.0,False,202,1,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+106,-1,ALL_PASS,True,True,1.0,1.0113,1.0113,1.0113,False,211,105,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+107,-1,ALL_PASS,True,True,1.0,0.9955,0.9955,1.0,False,253,105,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+108,-1,ALL_PASS,True,True,1.0,1.0132,1.0132,1.0132,False,211,94,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+109,-1,ALL_PASS,True,True,1.0,0.9997,0.9997,1.0,False,205,102,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+110,-1,ALL_PASS,True,True,1.0,1.0052,1.0052,1.0052,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+111,-1,ALL_PASS,True,True,1.0,0.9781,0.9781,1.0,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+112,-1,ALL_PASS,True,True,1.0,1.0065,1.0065,1.0065,False,231,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r14,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+113,-1,ALL_PASS,True,True,1.0,0.9975,0.9975,1.0,False,253,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+114,-1,ALL_PASS,True,True,1.0,0.9999,0.9999,1.0,False,217,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+115,-1,ALL_PASS,True,True,1.0,0.9855,0.9855,1.0,False,207,103,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+116,-1,ALL_PASS,True,True,1.0,0.9784,0.9784,1.0,False,218,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+117,-1,ALL_PASS,True,True,1.0,0.9899,0.9899,1.0,False,211,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+118,-1,ALL_PASS,True,True,1.0,1.0182,1.0182,1.0182,False,205,1,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+119,-1,ALL_PASS,True,True,1.0,0.9881,0.9881,1.0,False,237,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+120,-1,ALL_PASS,True,True,1.0,0.946,0.946,1.0,False,207,1,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+121,-1,ALL_PASS,True,True,1.0,0.991,0.991,1.0,False,201,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+122,-1,ALL_PASS,True,True,1.0,0.9534,0.9534,1.0,False,202,1,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+123,-1,ALL_PASS,True,True,1.0,0.9829,0.9829,1.0,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+124,-1,ALL_PASS,True,True,1.0,1.0037,1.0037,1.0037,False,202,6,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+125,-1,ALL_PASS,True,True,1.0,0.9924,0.9924,1.0,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+126,-1,ALL_PASS,True,True,1.0,1.0045,1.0045,1.0045,False,214,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+127,-1,ALL_PASS,True,True,1.0,0.9687,0.9687,1.0,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+128,-1,ALL_PASS,True,True,1.0,1.0073,1.0073,1.0073,False,180,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rax
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+129,-1,ALL_PASS,True,True,1.0,0.9995,0.9995,1.0,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+130,-1,ALL_PASS,True,True,1.0,1.0046,1.0046,1.0046,False,237,104,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+131,-1,ALL_PASS,True,True,1.0,1.0129,1.0129,1.0129,False,217,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+132,-1,ALL_PASS,True,True,1.0,0.9869,0.9869,1.0,False,207,103,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+133,-1,ALL_PASS,True,True,1.0,0.9935,0.9935,1.0,False,219,103,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+134,-1,ALL_PASS,True,True,1.0,0.9816,0.9816,1.0,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+135,-1,ALL_PASS,True,True,1.0,0.9966,0.9966,1.0,False,231,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r14,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+136,-1,ALL_PASS,True,True,1.0,1.0474,1.0474,1.0474,False,201,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+137,-1,ALL_PASS,True,True,1.0,0.9831,0.9831,1.0,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+138,-1,ALL_PASS,True,True,1.0,1.0036,1.0036,1.0036,False,202,105,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+139,-1,ALL_PASS,True,True,1.0,1.0204,1.0204,1.0204,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+140,-1,ALL_PASS,True,True,1.0,0.9879,0.9879,1.0,False,201,102,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+141,-1,ALL_PASS,True,True,1.0,0.9915,0.9915,1.0,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+142,-1,ALL_PASS,True,True,1.0,1.0033,1.0033,1.0033,False,211,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+143,-1,ALL_PASS,True,True,1.0,0.9935,0.9935,1.0,False,217,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+144,-1,ALL_PASS,True,True,1.0,1.0239,1.0239,1.0239,False,207,105,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+145,-1,ALL_PASS,True,True,1.0,1.1158,1.1158,1.1158,False,201,1,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+146,-1,ALL_PASS,True,True,1.0,1.0122,1.0122,1.0122,False,202,105,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+147,-1,ALL_PASS,True,True,1.0,0.985,0.985,1.0,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+subq $64, %rsp
+xorq %rbp, %rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+148,-1,ALL_PASS,True,True,1.0,0.9643,0.9643,1.0,False,211,1,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+149,-1,ALL_PASS,True,True,1.0,1.0365,1.0365,1.0365,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+150,-1,COMPILE_FAIL,False,False,-1.0,,1.0,1.0,False,202,103,"/tmp/tmpbm6862m7/sol.s: Assembler messages:
+/tmp/tmpbm6862m7/sol.s:145: Error: symbol `main' is already defined
+/tmp/tmpbm6862m7/sol.s:146: Error: symbol `.LFB35' is already defined
+/tmp/tmpbm6862m7/sol.s:166: Error: symbol `.L6' is already defined
+/tmp/tmpbm6862m7/sol.s:182: Error: symbol `.L11' is already defined
+/tmp/tmpbm6862m7/sol.s:184: Error: symbol `.L9' is already defined
+/tmp/tmpbm6862m7","```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+151,-1,ALL_PASS,True,True,1.0,0.9792,0.9792,1.0,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+152,-1,ALL_PASS,True,True,1.0,1.0216,1.0216,1.0216,False,226,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+153,-1,ALL_PASS,True,True,1.0,1.0145,1.0145,1.0145,False,226,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+154,-1,ALL_PASS,True,True,1.0,1.0133,1.0133,1.0133,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+155,-1,ALL_PASS,True,True,1.0,1.0535,1.0535,1.0535,False,211,30,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+156,-1,ALL_PASS,True,True,1.0,1.0047,1.0047,1.0047,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+157,-1,ALL_PASS,True,True,1.0,1.0171,1.0171,1.0171,False,237,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+158,-1,ALL_PASS,True,True,1.0,0.9554,0.9554,1.0,False,226,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+159,-1,ALL_PASS,True,True,1.0,1.0197,1.0197,1.0197,False,253,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+160,-1,ALL_PASS,True,True,1.0,1.001,1.001,1.001,False,253,105,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+161,-1,ALL_PASS,True,True,1.0,0.9943,0.9943,1.0,False,253,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+162,-1,ALL_PASS,True,True,1.0,1.002,1.002,1.002,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+163,-1,ALL_PASS,True,True,1.0,0.9976,0.9976,1.0,False,213,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+164,-1,ALL_PASS,True,True,1.0,1.0037,1.0037,1.0037,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+165,-1,ALL_PASS,True,True,1.0,1.0005,1.0005,1.0005,False,247,103,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+166,-1,ALL_PASS,True,True,1.0,1.1133,1.1133,1.1133,False,237,1,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+167,-1,ALL_PASS,True,True,1.0,1.0037,1.0037,1.0037,False,217,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+168,-1,ALL_PASS,True,True,1.0,0.9809,0.9809,1.0,False,231,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+169,-1,ALL_PASS,True,True,1.0,1.0045,1.0045,1.0045,False,253,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+170,-1,ALL_PASS,True,True,1.0,1.0339,1.0339,1.0339,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+171,-1,ALL_PASS,True,True,1.0,1.0007,1.0007,1.0007,False,180,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rax
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+172,-1,ALL_PASS,True,True,1.0,0.9629,0.9629,1.0,False,202,2,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+173,-1,ALL_PASS,True,True,1.0,1.3029,1.3029,1.3029,False,253,1,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+174,-1,ALL_PASS,True,True,1.0,1.1163,1.1163,1.1163,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+175,-1,ALL_PASS,True,True,1.0,1.0838,1.0838,1.0838,False,180,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rax
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+176,-1,ALL_PASS,True,True,1.0,0.8876,0.8876,1.0,False,202,1,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+177,-1,ALL_PASS,True,True,1.0,1.0598,1.0598,1.0598,False,253,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+178,-1,ALL_PASS,True,True,1.0,1.0451,1.0451,1.0451,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+179,-1,ALL_PASS,True,True,1.0,1.1071,1.1071,1.1071,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+180,-1,ALL_PASS,True,True,1.0,0.9963,0.9963,1.0,False,206,104,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+181,-1,ALL_PASS,True,True,1.0,0.9917,0.9917,1.0,False,206,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+182,-1,ALL_PASS,True,True,1.0,1.0279,1.0279,1.0279,False,211,103,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+183,-1,ALL_PASS,True,True,1.0,1.0188,1.0188,1.0188,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+184,-1,ALL_PASS,True,True,1.0,1.0263,1.0263,1.0263,False,214,106,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+185,-1,ALL_PASS,True,True,1.0,1.0142,1.0142,1.0142,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+186,-1,ALL_PASS,True,True,1.0,1.0406,1.0406,1.0406,False,213,1,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+187,-1,ALL_PASS,True,True,1.0,0.9995,0.9995,1.0,False,226,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+188,-1,ALL_PASS,True,True,1.0,0.9941,0.9941,1.0,False,226,105,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+189,-1,ALL_PASS,True,True,1.0,1.0098,1.0098,1.0098,False,208,1,,"```assembly
+// ... existing code ...
+movq %rbx, %rsp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+190,-1,ALL_PASS,True,True,1.0,1.0914,1.0914,1.0914,False,211,1,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+191,-1,ALL_PASS,True,True,1.0,1.0035,1.0035,1.0035,False,225,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+192,-1,ALL_PASS,True,True,1.0,1.028,1.028,1.028,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+193,-1,ALL_PASS,True,True,1.0,0.9672,0.9672,1.0,False,202,4,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+194,-1,ALL_PASS,True,True,1.0,0.9922,0.9922,1.0,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+195,-1,ALL_PASS,True,True,1.0,1.0049,1.0049,1.0049,False,202,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+196,-1,ALL_PASS,True,True,1.0,1.0007,1.0007,1.0007,False,205,105,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %r13
+popq %r14
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+197,-1,ALL_PASS,True,True,1.0,0.9923,0.9923,1.0,False,202,104,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+198,-1,ALL_PASS,True,True,1.0,0.9741,0.9741,1.0,False,180,102,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %rax
+popq %rbp
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+199,-1,ALL_PASS,True,True,1.0,0.9919,0.9919,1.0,False,207,103,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %r12
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True
+200,-1,ALL_PASS,True,True,1.0,0.9973,0.9973,1.0,False,202,105,,"```assembly
+// ... existing code ...
+movq %rbp, %rsp
+popq %rbx
+popq %rbp
+popq %rbp
+popq %rbx
+popq %rbp
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+popq %r11
+popq %r10
+popq %r9
+popq %r8
+popq %rbx
+popq %rbx
+popq %r15
+popq %r14
+popq %r13
+popq %r12
+popq %rbx
+popq %rbx
+movq %r12,%rsp
+xorq %rbp,%rbp
+leaveq
+retq
+// ... existing code ...
+```",True,True

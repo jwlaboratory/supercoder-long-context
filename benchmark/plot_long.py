@@ -31,14 +31,69 @@ COLORS = ["#4C72B0", "#DD8452", "#55A868"]
 
 
 def load_data(results_dir: Path) -> tuple[pd.DataFrame, dict[str, pd.DataFrame]]:
-    summary = pd.read_csv(results_dir / "infer_summary_by_bucket.csv")
-
     details: dict[str, pd.DataFrame] = {}
     for p in sorted(results_dir.glob("infer_results_*.csv")):
         tag = p.stem.removeprefix("infer_results_")
         details[tag] = pd.read_csv(p)
 
+    if details:
+        summary = _build_summary(details)
+    else:
+        summary = pd.read_csv(results_dir / "infer_summary_by_bucket.csv")
+
     return summary, details
+
+
+def _bool_series(series: pd.Series) -> pd.Series:
+    if series.dtype == bool:
+        return series
+    return series.astype(str).str.lower().isin({"true", "1", "yes"})
+
+
+def _numeric_series(df: pd.DataFrame, col: str, default: float) -> pd.Series:
+    if col not in df.columns:
+        return pd.Series([default] * len(df), index=df.index, dtype=float)
+    return pd.to_numeric(df[col], errors="coerce")
+
+
+def _build_summary(details: dict[str, pd.DataFrame]) -> pd.DataFrame:
+    rows = []
+    for model, df in details.items():
+        if "bucket" not in df.columns:
+            continue
+        for bucket in BUCKET_ORDER:
+            sub = df[df["bucket"] == bucket]
+            n = len(sub)
+            if n == 0:
+                continue
+
+            compiled = _bool_series(sub["compiled"]) if "compiled" in sub.columns else pd.Series([False] * n)
+            tests_pass = _bool_series(sub["tests_pass"]) if "tests_pass" in sub.columns else pd.Series([False] * n)
+            correctness = _numeric_series(sub, "correctness", -1.0).fillna(-1.0)
+            raw_speedup = _numeric_series(sub, "raw_speedup", np.nan)
+            sp_vals = raw_speedup.dropna()
+            effective_speedup = _numeric_series(sub, "effective_speedup", np.nan)
+            effective_speedup = effective_speedup.fillna(raw_speedup.where(tests_pass, 1.0)).fillna(1.0)
+            speedup_floor1 = _numeric_series(sub, "speedup_floor1", np.nan)
+            speedup_floor1 = speedup_floor1.fillna(effective_speedup).clip(lower=1.0).fillna(1.0)
+            geo_floor1 = float(np.exp(np.mean(np.log(speedup_floor1)))) if len(speedup_floor1) else 1.0
+            copy_rate = _bool_series(sub["is_copy"]).mean() if "is_copy" in sub.columns else 0.0
+
+            rows.append({
+                "model": model,
+                "bucket": bucket,
+                "n": n,
+                "compile_rate": round(float(compiled.mean()), 3),
+                "test_pass_rate": round(float(tests_pass.mean()), 3),
+                "mean_correctness": round(float(correctness.mean()), 3),
+                "n_speedup_measured": int(len(sp_vals)),
+                "mean_speedup": round(float(sp_vals.mean()), 4) if len(sp_vals) else np.nan,
+                "paper_avg_speedup": round(max(1.0, float(speedup_floor1.mean())), 4),
+                "geo_mean_floor1": round(max(1.0, geo_floor1), 4),
+                "copy_rate": round(float(copy_rate), 3),
+            })
+
+    return pd.DataFrame(rows)
 
 
 def _grouped_bar(ax, summary: pd.DataFrame, models: list[str], value_col: str,
@@ -89,19 +144,19 @@ def plot(results_dir: Path, out: Path) -> None:
     _grouped_bar(axes[0, 2], summary, models, "mean_correctness",
                  "score", "Mean Correctness by Bucket", fmt="%.3f")
 
-    # 4. Geo-mean speedup by bucket
-    has_speedup = "geo_mean_floor1" in summary.columns
+    # 4. Paper average speedup by bucket
+    has_speedup = "paper_avg_speedup" in summary.columns
     if has_speedup:
         num = summary.copy()
-        num["geo_mean_floor1"] = pd.to_numeric(num["geo_mean_floor1"], errors="coerce").fillna(1.0)
-        _grouped_bar(axes[1, 0], num, models, "geo_mean_floor1",
-                     "geo-mean speedup", "Geo-Mean Speedup by Bucket (paper metric)", fmt="%.3fx")
+        num["paper_avg_speedup"] = pd.to_numeric(num["paper_avg_speedup"], errors="coerce").fillna(1.0)
+        _grouped_bar(axes[1, 0], num, models, "paper_avg_speedup",
+                     "average speedup", "Average Speedup by Bucket (paper metric)", fmt="%.3fx")
         axes[1, 0].axhline(1.0, color="grey", lw=0.8, ls="--")
     else:
         axes[1, 0].text(0.5, 0.5, "No speedup data\n(re-run with --do-speedup)",
                         ha="center", va="center", transform=axes[1, 0].transAxes,
                         fontsize=10, color="grey")
-        axes[1, 0].set_title("Geo-Mean Speedup by Bucket", fontweight="bold")
+        axes[1, 0].set_title("Average Speedup by Bucket", fontweight="bold")
 
     # 5. Copy rate by bucket
     _grouped_bar(axes[1, 1], summary, models, "copy_rate",

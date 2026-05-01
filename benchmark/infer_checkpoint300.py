@@ -7,8 +7,8 @@ Usage
 -----
     cd qwen-long-context/benchmark
     modal run merge_checkpoint.py --exp train2-lazy-supercoder --step 300
-    modal run infer_checkpoint300.py
-    modal run infer_checkpoint300.py --do-speedup
+    modal run infer_checkpoint300.py::checkpoint300
+    modal run infer_checkpoint300.py::checkpoint300 --do-speedup
 
 Outputs are written to ``checkpoint300_results/`` with ``_300`` filenames,
 for example ``infer_summary_300.csv``.

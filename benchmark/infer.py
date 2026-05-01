@@ -46,13 +46,15 @@ LAZY_EXP  = "train2-lazy-supercoder"
 
 # Original SuperCoder prompt (for qwen-base and supercoder)
 ORIGINAL_PROMPT_TEMPLATE = (
-    "You are an expert x86-64 assembly programmer. "
-    "Given the following C code and its unoptimized assembly, "
-    "generate a highly optimized x86-64 assembly version that produces "
-    "the same output for all inputs.\n\n"
-    "C Code:\n\n```c\n{c_code}\n```\n\n"
-    "Assembly Code:\n\n```assembly\n{unopt_asm}\n```\n\n"
-    "Generated, optimized assembly:\n"
+    "Given the following C code and assembly code, your task is to generate "
+    "highly optimized x86-64 assembly code.\n"
+    "C Code:\n\n"
+    "```c\n{c_code}\n```\n\n"
+    "Assembly Code:\n\n"
+    "```assembly\n{unopt_asm}\n```\n\n"
+    "Only output the optimized assembly code. Do not include any other text. "
+    "Do not write any comments in the assembly code. Wrap the assembly code "
+    "in ```assembly``` tags.\nOptimized Assembly Code:\n"
 )
 
 # Lazy edit prompt (for lazy-morph model)
@@ -172,6 +174,32 @@ def _strip_assembly_fence(text):
     return text.strip()
 
 
+def _prompt_content(row) -> str:
+    raw_prompt = row.get("prompt", None)
+    if hasattr(raw_prompt, "tolist"):
+        raw_prompt = raw_prompt.tolist()
+    if isinstance(raw_prompt, dict):
+        return str(raw_prompt.get("content", ""))
+    if isinstance(raw_prompt, (list, tuple)) and raw_prompt:
+        first = raw_prompt[0]
+        if isinstance(first, dict):
+            return str(first.get("content", ""))
+    return str(raw_prompt or "")
+
+
+def _extract_c_code_from_prompt(row) -> str:
+    import re
+
+    match = re.search(
+        r"C Code:\n\n```c\n(?P<c_code>.*?)```\n\nAssembly Code:",
+        _prompt_content(row),
+        re.DOTALL,
+    )
+    if match is None:
+        return ""
+    return match.group("c_code").rstrip("\n")
+
+
 # -- Single-model Modal function (one GPU container per model) ----------------
 
 @app.function(
@@ -198,6 +226,7 @@ def eval_model(
     random_seed: int = 42,
     do_speedup: bool = False,
     max_inputs_for_speedup: int = 10,
+    max_prompt_length: int = 2000,
 ) -> tuple[str, list[dict]]:
     import gc, json, os, subprocess, sys, tempfile, time
     import numpy as np
@@ -215,9 +244,11 @@ def eval_model(
         print(f"[{tag}] No model path -- skipping.")
         return tag, []
 
-    # Load the same sample every time (fixed seed)
-    df      = pd.read_parquet(f"/data/{parquet}.parquet")
-    samples = [row for _, row in df.sample(n=min(n_samples, len(df)), random_state=random_seed).iterrows()]
+    # Load the same sample every time (fixed seed). Keep the parquet row index
+    # (`sample_idx`) so logs/CSVs identify a specific source row across models.
+    df = pd.read_parquet(f"/data/{parquet}.parquet")
+    sampled_df = df.sample(n=min(n_samples, len(df)), random_state=random_seed)
+    samples = list(sampled_df.iterrows())
     print(f"\n[{tag}] model={model_path}  parquet={parquet}  samples={len(samples)}  lazy={is_lazy}")
 
     tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
@@ -233,74 +264,122 @@ def eval_model(
         stop_token_ids=[151643, 151645],
     )
 
-    # Build prompts from extra_info (not stored prompts) so all models
-    # get the correct prompt format regardless of parquet version.
+    # Build prompts with the same format used for SuperCoder training. The
+    # SuperCoder parquet stores C code in prompt, not extra_info.
+    sample_meta = []  # one entry per sampled row, even when filtered
     prompts = []
-    for row in samples:
+    gen_indices = []
+    n_filtered = 0
+    for slot, (row_idx, row) in enumerate(samples):
         ei = row["extra_info"] if isinstance(row["extra_info"], dict) else {}
-        c_code   = ei.get("c_code", "")
+        c_code = ei.get("c_code") or _extract_c_code_from_prompt(row)
         unopt_asm = _strip_assembly_fence(ei.get("unoptimized_assembly", ""))
+        if not c_code:
+            raise ValueError(
+                f"[{tag}] could not extract C code from row {int(row_idx)}; "
+                "benchmark would otherwise send an empty C block"
+            )
 
         if is_lazy:
             content = LAZY_PROMPT_TEMPLATE.format(c_code=c_code, unopt_asm=unopt_asm)
         else:
             content = ORIGINAL_PROMPT_TEMPLATE.format(c_code=c_code, unopt_asm=unopt_asm)
 
-        msgs = [{"role": "user", "content": content}]
-        prompts.append(
-            tokenizer.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
+        chat_prompt = tokenizer.apply_chat_template(
+            [{"role": "user", "content": content}], tokenize=False, add_generation_prompt=True
         )
+        prompt_tokens = len(tokenizer(chat_prompt, add_special_tokens=False)["input_ids"])
+        overlong = prompt_tokens > max_prompt_length
 
+        sample_meta.append({
+            "slot":          slot,
+            "row_idx":       int(row_idx),
+            "row":           row,
+            "ei":            ei,
+            "content":       content,
+            "chat_prompt":   chat_prompt,
+            "prompt_tokens": prompt_tokens,
+            "overlong":      overlong,
+        })
+        if overlong:
+            n_filtered += 1
+        else:
+            prompts.append(chat_prompt)
+            gen_indices.append(slot)
+
+    if sample_meta:
+        first = sample_meta[0]
+        preview = first["content"][:600].replace("\n", "\\n")
+        print(f"[{tag}] sample-row prompt preview (row_idx={first['row_idx']}, "
+              f"prompt_tokens={first['prompt_tokens']}): {preview}...")
+    print(f"[{tag}] Filtered overlong prompts: {n_filtered}/{len(sample_meta)} "
+          f"(max_prompt_length={max_prompt_length})")
     print(f"[{tag}] Generating {len(prompts)} responses ...")
+
     t0 = time.time()
-    outputs = llm.generate(prompts, sampling_params)
+    outputs = llm.generate(prompts, sampling_params) if prompts else []
     print(f"[{tag}] Done in {time.time()-t0:.1f}s")
 
-    results = []
-    for i, (output, row) in enumerate(zip(outputs, samples)):
-        raw_response    = output.outputs[0].text
-        response_tokens = len(output.outputs[0].token_ids)
+    output_by_slot = {slot: out for slot, out in zip(gen_indices, outputs)}
 
-        ei           = row["extra_info"] if isinstance(row["extra_info"], dict) else {}
+    results = []
+    for meta in sample_meta:
+        row = meta["row"]
+        ei  = meta["ei"]
         ground_truth = row["reward_model"].get("ground_truth", "") if isinstance(row["reward_model"], dict) else ""
+        output = output_by_slot.get(meta["slot"])
+
+        if meta["overlong"] or output is None:
+            raw_response = ""
+            response_tokens = 0
+        else:
+            raw_response = output.outputs[0].text
+            response_tokens = len(output.outputs[0].token_ids)
 
         # For lazy-morph: merge the edit via Morph API, then evaluate
         morph_called  = False
         morph_success = False
-        if is_lazy:
-            asm, morph_metrics = prepare_solution_assembly(raw_response, ei)
-            morph_called  = morph_metrics.get("morph/called", 0) > 0
-            morph_success = morph_metrics.get("morph/success", 0) > 0
-            if asm is None:
-                # Morph merge failed
-                asm = ""
+        if meta["overlong"]:
+            asm = ""
+            status = "PROMPT_TOO_LONG"
+            correctness = -1.0
+            compiled = False
+            tests_pass = False
+            binary = None
+            compile_stderr = "skipped: prompt exceeds max_prompt_length"
         else:
-            asm = _strip_assembly_fence(raw_response)
+            if is_lazy:
+                asm, morph_metrics = prepare_solution_assembly(raw_response, ei)
+                morph_called  = morph_metrics.get("morph/called", 0) > 0
+                morph_success = morph_metrics.get("morph/success", 0) > 0
+                if asm is None:
+                    asm = ""
+            else:
+                asm = _strip_assembly_fence(raw_response)
 
-        # Compile stderr capture
-        compile_stderr = ""
-        try:
-            with tempfile.TemporaryDirectory() as d:
-                asm_f = os.path.join(d, "sol.s")
-                bin_f = os.path.join(d, "sol.bin")
-                with open(asm_f, "w") as f:
-                    f.write(asm)
-                cr = subprocess.run(
-                    f"gcc {asm_f} -o {bin_f} -lm",
-                    shell=True, capture_output=True, text=True, timeout=30,
-                )
-                compile_stderr = cr.stderr[:400] if cr.returncode != 0 else ""
-        except Exception as e:
-            compile_stderr = str(e)[:200]
+            compile_stderr = ""
+            try:
+                with tempfile.TemporaryDirectory() as d:
+                    asm_f = os.path.join(d, "sol.s")
+                    bin_f = os.path.join(d, "sol.bin")
+                    with open(asm_f, "w") as f:
+                        f.write(asm)
+                    cr = subprocess.run(
+                        f"gcc {asm_f} -o {bin_f} -lm",
+                        shell=True, capture_output=True, text=True, timeout=30,
+                    )
+                    compile_stderr = cr.stderr[:400] if cr.returncode != 0 else ""
+            except Exception as e:
+                compile_stderr = str(e)[:200]
 
-        correctness, binary = check_correctness(asm, ground_truth, ei)
-        compiled   = (correctness != -1)
-        tests_pass = (correctness == 1.0)
+            correctness, binary = check_correctness(asm, ground_truth, ei)
+            compiled   = (correctness != -1)
+            tests_pass = (correctness == 1.0)
 
-        if correctness == -1:       status = "COMPILE_FAIL"
-        elif correctness == -0.5:   status = "RUNTIME_ERR"
-        elif correctness == 1.0:    status = "ALL_PASS"
-        else:                       status = f"PARTIAL_{correctness:.0%}"
+            if correctness == -1:       status = "COMPILE_FAIL"
+            elif correctness == -0.5:   status = "RUNTIME_ERR"
+            elif correctness == 1.0:    status = "ALL_PASS"
+            else:                       status = f"PARTIAL_{correctness:.0%}"
 
         unopt_stripped = _strip_assembly_fence(ei.get("unoptimized_assembly", ""))
         is_copy = (asm.strip() == unopt_stripped)
@@ -360,11 +439,13 @@ def eval_model(
 
         sp_str = f"speedup={raw_speedup:.3f}x" if raw_speedup is not None else "speedup=N/A"
         morph_str = f"  morph={'OK' if morph_success else 'FAIL'}" if morph_called else ""
-        print(f"[{tag}] [{i+1:3d}/{len(samples)}]  {status:<20s}  {sp_str}  copy={'Y' if is_copy else 'N'}{morph_str}")
+        print(f"[{tag}] [{meta['slot']+1:3d}/{len(sample_meta)}]  row_idx={meta['row_idx']:>5}  {status:<20s}  {sp_str}  copy={'Y' if is_copy else 'N'}{morph_str}")
 
         row_result = {
-            "idx":               i + 1,
-            "problem_idx":       ei.get("problem_idx", -1),
+            "idx":               meta["slot"] + 1,
+            "row_idx":           meta["row_idx"],
+            "prompt_tokens":     meta["prompt_tokens"],
+            "overlong":          meta["overlong"],
             "status":            status,
             "compiled":          compiled,
             "tests_pass":        tests_pass,
@@ -466,7 +547,8 @@ def main(
 
     # Write CSVs
     detail_fields = [
-        "idx", "problem_idx", "status", "compiled", "tests_pass", "correctness",
+        "idx", "row_idx", "prompt_tokens", "overlong",
+        "status", "compiled", "tests_pass", "correctness",
         "raw_speedup", "effective_speedup", "speedup_floor1", "is_copy",
         "response_tokens", "n_inputs", "compile_stderr", "response",
         "morph_called", "morph_success",
@@ -549,7 +631,7 @@ def main(
         ("mean_speedup",            "mean_speedup (ALL_PASS)"),
         ("max_speedup",             "max_speedup"),
         ("mean_effective_speedup",  "mean_effective_speedup"),
-        ("geo_mean_speedup_floor1", "geo_mean (paper)"),
+        ("geo_mean_speedup_floor1", "geo_mean_floor1"),
         ("p50_speedup_floor1",      "p50_speedup"),
         ("p75_speedup_floor1",      "p75_speedup"),
         ("copy_rate",               "copy_rate (bad)"),

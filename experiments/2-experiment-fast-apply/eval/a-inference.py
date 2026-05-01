@@ -143,7 +143,7 @@ def run_model(
             with open(c_file, "w") as f:
                 f.write(s["c_code"])
             r = subprocess.run(
-                ["gcc", "-S", "-O0", "-o", s_file, c_file],
+                ["gcc", "-S", "-O3", "-o", s_file, c_file],
                 capture_output=True, text=True, timeout=30,
             )
             if r.returncode != 0 or not os.path.exists(s_file):
