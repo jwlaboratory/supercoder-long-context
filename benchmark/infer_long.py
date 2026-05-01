@@ -225,21 +225,37 @@ def run_model(
     ok_samples = [s for s in samples if s.get("compile_unopt_ok")]
     print(f"[{tag}] compiled unopt OK: {len(ok_samples)}/{len(samples)}")
 
-    # Build prompts
+    # Build prompts. Drop rows whose tokenized prompt would exceed the model
+    # context (max_model_len - max_tokens) so vLLM doesn't crash.
     tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
+    prompt_budget = max(0, max_model_len - max_tokens)
     prompts = []
+    overlong_count = 0
     for s in samples:
         if not s.get("compile_unopt_ok"):
             prompts.append("")
+            s["prompt_tokens"] = 0
+            s["overlong"] = False
             continue
         if is_lazy:
             content = LAZY_PROMPT_TEMPLATE.format(c_code=s["c_code"], unopt_asm=s["unopt_asm"])
         else:
             content = ORIGINAL_PROMPT_TEMPLATE.format(c_code=s["c_code"], unopt_asm=s["unopt_asm"])
         msgs = [{"role": "user", "content": content}]
-        prompts.append(
-            tokenizer.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
+        chat_prompt = tokenizer.apply_chat_template(
+            msgs, tokenize=False, add_generation_prompt=True
         )
+        prompt_tokens = len(tokenizer(chat_prompt, add_special_tokens=False)["input_ids"])
+        s["prompt_tokens"] = prompt_tokens
+        s["overlong"] = prompt_tokens > prompt_budget
+        if s["overlong"]:
+            overlong_count += 1
+            prompts.append("")
+        else:
+            prompts.append(chat_prompt)
+
+    print(f"[{tag}] Filtered overlong prompts: {overlong_count}/{len(samples)} "
+          f"(prompt_budget={prompt_budget} tokens)")
 
     llm = vllm.LLM(
         model=model_path,
@@ -257,7 +273,7 @@ def run_model(
     gen_prompts = [prompts[i] for i in gen_idx]
     print(f"[{tag}] generating {len(gen_prompts)} / {len(prompts)}")
     t0 = time.time()
-    outputs = llm.generate(gen_prompts, sp)
+    outputs = llm.generate(gen_prompts, sp) if gen_prompts else []
     print(f"[{tag}] generate done in {time.time()-t0:.1f}s")
 
     out_by_pos: dict[int, tuple[str, int]] = {}
@@ -269,13 +285,21 @@ def run_model(
     for idx, s in enumerate(samples):
         raw_response, n_tok = out_by_pos.get(idx, ("", 0))
 
-        if not s.get("compile_unopt_ok") or not raw_response:
+        if not s.get("compile_unopt_ok") or s.get("overlong") or not raw_response:
+            if not s.get("compile_unopt_ok"):
+                status = "COMPILE_UNOPT_FAIL"
+            elif s.get("overlong"):
+                status = "PROMPT_TOO_LONG"
+            else:
+                status = "NO_RESPONSE"
             results.append({
                 "idx": idx + 1,
                 "bucket": s["bucket"],
                 "problem_id": s.get("problem_id", ""),
                 "c_loc": s.get("c_loc", 0),
-                "status": "COMPILE_UNOPT_FAIL" if not s.get("compile_unopt_ok") else "NO_RESPONSE",
+                "prompt_tokens": s.get("prompt_tokens", 0),
+                "overlong": bool(s.get("overlong", False)),
+                "status": status,
                 "compiled": False,
                 "tests_pass": False,
                 "correctness": -1,
@@ -425,6 +449,8 @@ def run_model(
             "bucket": s["bucket"],
             "problem_id": s.get("problem_id", ""),
             "c_loc": s.get("c_loc", 0),
+            "prompt_tokens": s.get("prompt_tokens", 0),
+            "overlong": bool(s.get("overlong", False)),
             "status": status,
             "compiled": compiled,
             "tests_pass": tests_pass,
@@ -535,7 +561,8 @@ def main(
 
     # Write per-model detail CSVs
     detail_fields = [
-        "idx", "bucket", "problem_id", "c_loc", "status", "compiled", "tests_pass",
+        "idx", "bucket", "problem_id", "c_loc", "prompt_tokens", "overlong",
+        "status", "compiled", "tests_pass",
         "correctness", "n_tests", "n_tests_pass",
         "raw_speedup", "effective_speedup", "speedup_floor1",
         "is_copy", "response_tokens", "compile_stderr",

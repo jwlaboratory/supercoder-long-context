@@ -1,238 +1,268 @@
-idx,bucket,problem_id,c_loc,status,compiled,tests_pass,correctness,n_tests,n_tests_pass,raw_speedup,effective_speedup,speedup_floor1,is_copy,response_tokens,compile_stderr,morph_called,morph_success
-1,short,p02233,12,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1411,,,
-2,short,p02401,15,PARTIAL_20%,True,False,0.2,10,2,,1.0,1.0,False,858,,,
-3,short,p02389,11,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,593,,,
-4,short,p02657,15,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,527,,,
-5,short,p03352,1,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,693,,,
-6,short,p02783,14,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,630,,,
-7,short,p02759,10,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,595,,,
-8,short,p03834,10,PARTIAL_40%,True,False,0.4,10,4,,1.0,1.0,False,486,,,
-9,short,p02380,15,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,1351,,,
-10,short,p03544,12,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,801,,,
-11,short,p00586,9,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,529,,,
-12,short,p03260,12,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,553,,,
-13,short,p02729,13,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,655,,,
-14,short,p03303,11,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,633,,,
-15,short,p03963,14,PARTIAL_60%,True,False,0.6,10,6,,1.0,1.0,False,633,,,
-16,short,p00047,13,ALL_PASS,True,True,1.0,1,1,,1.0,1.0,False,638,,,
-17,short,p03437,1,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,516,,,
-18,short,p03563,9,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,534,,,
-19,short,p03813,7,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,498,,,
-20,short,p00251,9,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,874,,,
-21,short,p02713,1,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1157,,,
-22,short,p03109,9,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,543,,,
-23,short,p00103,1,ALL_PASS,True,True,1.0,2,2,,1.0,1.0,False,1112,,,
-24,short,p03035,12,PARTIAL_10%,True,False,0.1,10,1,,1.0,1.0,False,672,,,
-25,short,p03605,7,PARTIAL_60%,True,False,0.6,10,6,,1.0,1.0,False,677,,,
-26,short,p02389,7,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,546,,,
-27,short,p00094,9,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,578,,,
-28,short,p02705,9,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,594,,,
-29,short,p03759,8,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,614,,,
-30,short,p03307,11,PARTIAL_90%,True,False,0.9,10,9,,1.0,1.0,False,575,,,
-31,short,p02705,13,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,572,,,
-32,short,p02396,11,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,547,,,
-33,short,p02759,9,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,626,,,
-34,short,p02607,14,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,780,,,
-35,short,p02392,13,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,590,,,
-36,short,p02400,10,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,702,,,
-37,short,p04029,12,PARTIAL_70%,True,False,0.7,10,7,,1.0,1.0,False,569,,,
-38,short,p02621,8,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,562,,,
-39,short,p03059,10,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,666,,,
-40,short,p02388,9,ALL_PASS,True,True,1.0,1,1,,1.0,1.0,False,508,,,
-41,short,p02398,13,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,650,,,
-42,short,p03328,12,PARTIAL_70%,True,False,0.7,10,7,,1.0,1.0,False,709,,,
-43,short,p02594,14,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,511,,,
-44,short,p03963,11,PARTIAL_60%,True,False,0.6,10,6,,1.0,1.0,False,624,,,
-45,short,p02717,8,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,523,,,
-46,short,p03447,12,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,712,,,
-47,short,p03135,13,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,539,,,
-48,short,p02621,8,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,571,,,
-49,short,p03264,9,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,652,,,
-50,short,p03632,9,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,753,,,
-51,medium_short,p00377,19,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,918,,,
-52,medium_short,p00020,19,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,806,,,
-53,medium_short,p02700,21,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,732,,,
-54,medium_short,p02399,19,PARTIAL_90%,True,False,0.9,10,9,,1.0,1.0,False,705,,,
-55,medium_short,p00227,21,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1321,,,
-56,medium_short,p02529,21,COMPILE_FAIL,True,False,-1.0,0,0,,1.0,1.0,False,1036,,,
-57,medium_short,p02724,18,PARTIAL_70%,True,False,0.7,10,7,,1.0,1.0,False,811,,,
-58,medium_short,p03610,17,ALL_PASS,True,True,1.0,1,1,,1.0,1.0,False,725,,,
-59,medium_short,p03679,18,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,753,,,
-60,medium_short,p02391,19,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,623,,,
-61,medium_short,p03035,18,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,644,,,
-62,medium_short,p02860,19,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1478,,,
-63,medium_short,p02403,16,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,672,,,
-64,medium_short,p02772,18,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,979,,,
-65,medium_short,p03852,18,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,640,,,
-66,medium_short,p03000,21,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,843,,,
-67,medium_short,p02640,18,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,640,,,
-68,medium_short,p03449,17,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1228,,,
-69,medium_short,p03657,20,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1110,,,
-70,medium_short,p02388,21,ALL_PASS,True,True,1.0,1,1,,1.0,1.0,False,508,,,
-71,medium_short,p02397,16,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,675,,,
-72,medium_short,p02681,17,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,684,,,
-73,medium_short,p03080,18,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,768,,,
-74,medium_short,p02699,19,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,593,,,
-75,medium_short,p03407,16,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,571,,,
-76,medium_short,p02578,21,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1679,,,
-77,medium_short,p02393,20,ALL_PASS,True,True,1.0,1,1,,1.0,1.0,False,1291,,,
-78,medium_short,p02393,21,ALL_PASS,True,True,1.0,1,1,,1.0,1.0,False,929,,,
-79,medium_short,p02389,19,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,593,,,
-80,medium_short,p00357,19,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1410,,,
-81,medium_short,p00292,17,ALL_PASS,True,True,1.0,1,1,,1.0,1.0,False,1522,,,
-82,medium_short,p03631,17,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,782,,,
-83,medium_short,p02392,17,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,590,,,
-84,medium_short,p03303,19,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,717,,,
-85,medium_short,p02945,17,ALL_PASS,True,True,1.0,1,1,,1.0,1.0,False,997,,,
-86,medium_short,p02390,18,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,997,,,
-87,medium_short,p02705,16,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,641,,,
-88,medium_short,p02398,21,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,649,,,
-89,medium_short,p02951,20,PARTIAL_20%,True,False,0.2,10,2,,1.0,1.0,False,867,,,
-90,medium_short,p02523,18,COMPILE_FAIL,True,False,-1.0,0,0,,1.0,1.0,False,871,,,
-91,medium_short,p02397,17,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,673,,,
-92,medium_short,p03265,21,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,856,,,
-93,medium_short,p03135,17,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,539,,,
-94,medium_short,p00586,20,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,526,,,
-95,medium_short,p03328,20,PARTIAL_70%,True,False,0.7,10,7,,1.0,1.0,False,888,,,
-96,medium_short,p02485,18,COMPILE_FAIL,True,False,-1.0,0,0,,1.0,1.0,False,758,,,
-97,medium_short,p02407,16,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,797,,,
-98,medium_short,p02421,20,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,868,,,
-99,medium_short,p02407,16,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,856,,,
-100,medium_short,p02887,17,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1341,,,
-101,medium_long,p02258,26,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1114,,,
-102,medium_long,p03434,26,PARTIAL_40%,True,False,0.4,10,4,,1.0,1.0,False,1924,,,
-103,medium_long,p02411,28,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1236,,,
-104,medium_long,p00004,24,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1237,,,
-105,medium_long,p02404,29,PARTIAL_70%,True,False,0.7,10,7,,1.0,1.0,False,2086,,,
-106,medium_long,p03993,22,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1033,,,
-107,medium_long,p00079,24,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,1978,,,
-108,medium_long,p04012,24,PARTIAL_90%,True,False,0.9,10,9,,1.0,1.0,False,947,,,
-109,medium_long,p00314,24,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1117,,,
-110,medium_long,p02416,27,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,903,,,
-111,medium_long,p03632,22,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,783,,,
-112,medium_long,p02624,28,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1406,,,
-113,medium_long,p00534,29,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,2431,,,
-114,medium_long,p03370,27,PARTIAL_70%,True,False,0.7,10,7,,1.0,1.0,False,1378,,,
-115,medium_long,p03160,27,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,2449,,,
-116,medium_long,p00033,28,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1319,,,
-117,medium_long,p00005,23,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1102,,,
-118,medium_long,p02271,25,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1405,,,
-119,medium_long,p02880,23,PARTIAL_90%,True,False,0.9,10,9,,1.0,1.0,False,663,,,
-120,medium_long,p02398,22,PARTIAL_90%,True,False,0.9,10,9,,1.0,1.0,False,877,,,
-121,medium_long,p03632,27,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,696,,,
-122,medium_long,p03031,23,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,1638,"/tmp/tmpymolqms9/gen.s: Assembler messages:
-/tmp/tmpymolqms9/gen.s: Warning: end of file not at end of a line; newline inserted
-/usr/bin/ld: /tmp/ccrw1B3G.o: in function `main':
-x.c:(.text+0x18f): undefined reference to `.L8'
+idx,bucket,problem_id,c_loc,prompt_tokens,overlong,status,compiled,tests_pass,correctness,n_tests,n_tests_pass,raw_speedup,effective_speedup,speedup_floor1,is_copy,response_tokens,compile_stderr,morph_called,morph_success
+1,short,p02233,12,1408,False,ALL_PASS,True,True,1.0,10,10,1.0371,1.0371,1.0371,False,1102,,,
+2,short,p02401,15,1456,False,PARTIAL_20%,True,False,0.2,10,2,,1.0,1.0,False,1127,,,
+3,short,p02389,11,762,False,ALL_PASS,True,True,1.0,10,10,0.9706,0.9706,1.0,False,535,,,
+4,short,p02657,15,669,False,ALL_PASS,True,True,1.0,10,10,1.0181,1.0181,1.0181,False,465,,,
+5,short,p03352,1,965,False,ALL_PASS,True,True,1.0,10,10,1.0464,1.0464,1.0464,False,729,,,
+6,short,p02783,14,738,False,ALL_PASS,True,True,1.0,10,10,0.9813,0.9813,1.0,False,491,,,
+7,short,p02759,10,774,False,ALL_PASS,True,True,1.0,10,10,1.0331,1.0331,1.0331,False,555,,,
+8,short,p03834,10,784,False,PARTIAL_40%,True,False,0.4,10,4,,1.0,1.0,False,568,,,
+9,short,p02380,15,1476,False,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,1116,,,
+10,short,p03544,12,1063,False,ALL_PASS,True,True,1.0,10,10,0.9695,0.9695,1.0,False,779,,,
+11,short,p00586,9,970,False,ALL_PASS,True,True,1.0,10,10,1.0118,1.0118,1.0118,False,732,,,
+12,short,p03260,12,719,False,ALL_PASS,True,True,1.0,10,10,0.9559,0.9559,1.0,False,497,,,
+13,short,p02729,13,805,False,ALL_PASS,True,True,1.0,10,10,1.0125,1.0125,1.0125,False,571,,,
+14,short,p03303,11,859,False,ALL_PASS,True,True,1.0,10,10,1.2785,1.2785,1.2785,False,624,,,
+15,short,p03963,14,800,False,PARTIAL_60%,True,False,0.6,10,6,,1.0,1.0,False,559,,,
+16,short,p00047,13,1115,False,ALL_PASS,True,True,1.0,1,1,0.9973,0.9973,1.0,False,823,,,
+17,short,p03437,1,640,False,ALL_PASS,True,True,1.0,10,10,1.0002,1.0002,1.0002,False,453,,,
+18,short,p03563,9,683,False,ALL_PASS,True,True,1.0,10,10,1.0144,1.0144,1.0144,False,474,,,
+19,short,p03813,7,657,False,ALL_PASS,True,True,1.0,10,10,0.9952,0.9952,1.0,False,459,,,
+20,short,p00251,9,1087,False,ALL_PASS,True,True,1.0,10,10,0.9715,0.9715,1.0,False,782,,,
+21,short,p02713,1,1887,False,ALL_PASS,True,True,1.0,10,10,0.9918,0.9918,1.0,False,1550,,,
+22,short,p03109,9,715,False,ALL_PASS,True,True,1.0,10,10,0.9801,0.9801,1.0,False,505,,,
+23,short,p00103,1,1353,False,ALL_PASS,True,True,1.0,2,2,0.9676,0.9676,1.0,False,1059,,,
+24,short,p03035,12,856,False,ALL_PASS,True,True,1.0,10,10,0.9034,0.9034,1.0,False,611,,,
+25,short,p03605,7,818,False,PARTIAL_60%,True,False,0.6,10,6,,1.0,1.0,False,600,,,
+26,short,p02389,7,701,False,ALL_PASS,True,True,1.0,10,10,0.8398,0.8398,1.0,False,493,,,
+27,short,p00094,9,765,False,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,539,,,
+28,short,p02705,9,747,False,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,539,,,
+29,short,p03759,8,799,False,ALL_PASS,True,True,1.0,10,10,1.0208,1.0208,1.0208,False,581,,,
+30,short,p03307,11,681,False,PARTIAL_90%,True,False,0.9,10,9,,1.0,1.0,False,470,,,
+31,short,p02705,13,735,False,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,535,,,
+32,short,p02396,11,978,False,ALL_PASS,True,True,1.0,10,10,1.0271,1.0271,1.0271,False,731,,,
+33,short,p02759,9,750,False,ALL_PASS,True,True,1.0,10,10,0.9781,0.9781,1.0,False,536,,,
+34,short,p02607,14,1221,False,ALL_PASS,True,True,1.0,10,10,0.9776,0.9776,1.0,False,916,,,
+35,short,p02392,13,744,False,ALL_PASS,True,True,1.0,10,10,1.0418,1.0418,1.0418,False,532,,,
+36,short,p02400,10,824,False,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,575,,,
+37,short,p04029,12,1433,False,PARTIAL_70%,True,False,0.7,10,7,,1.0,1.0,False,1134,,,
+38,short,p02621,8,734,False,ALL_PASS,True,True,1.0,10,10,1.0357,1.0357,1.0357,False,530,,,
+39,short,p03059,10,836,False,ALL_PASS,True,True,1.0,10,10,0.9359,0.9359,1.0,False,606,,,
+40,short,p02388,9,672,False,ALL_PASS,True,True,1.0,1,1,0.9979,0.9979,1.0,False,470,,,
+41,short,p02398,13,900,False,ALL_PASS,True,True,1.0,10,10,0.9677,0.9677,1.0,False,645,,,
+42,short,p03328,12,859,False,PARTIAL_70%,True,False,0.7,10,7,,1.0,1.0,False,609,,,
+43,short,p02594,14,687,False,ALL_PASS,True,True,1.0,10,10,1.3446,1.3446,1.3446,False,471,,,
+44,short,p03963,11,784,False,PARTIAL_60%,True,False,0.6,10,6,,1.0,1.0,False,548,,,
+45,short,p02717,8,714,False,ALL_PASS,True,True,1.0,10,10,0.9999,0.9999,1.0,False,503,,,
+46,short,p03447,12,855,False,ALL_PASS,True,True,1.0,10,10,1.0483,1.0483,1.0483,False,620,,,
+47,short,p03135,13,687,False,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,479,,,
+48,short,p02621,8,696,False,ALL_PASS,True,True,1.0,10,10,1.0324,1.0324,1.0324,False,489,,,
+49,short,p03264,9,749,False,ALL_PASS,True,True,1.0,10,10,1.0224,1.0224,1.0224,False,536,,,
+50,short,p03632,9,972,False,ALL_PASS,True,True,1.0,10,10,1.0264,1.0264,1.0264,False,706,,,
+51,medium_short,p00377,19,1274,False,ALL_PASS,True,True,1.0,10,10,0.9836,0.9836,1.0,False,956,,,
+52,medium_short,p00020,19,988,False,ALL_PASS,True,True,1.0,10,10,0.994,0.994,1.0,False,699,,,
+53,medium_short,p02700,21,1140,False,ALL_PASS,True,True,1.0,10,10,1.0122,1.0122,1.0122,False,833,,,
+54,medium_short,p02399,19,810,False,PARTIAL_90%,True,False,0.9,10,9,,1.0,1.0,False,558,,,
+55,medium_short,p00227,21,2355,False,ALL_PASS,True,True,1.0,10,10,0.9954,0.9954,1.0,False,1845,,,
+56,medium_short,p02529,21,1436,False,COMPILE_FAIL,True,False,-1.0,0,0,,1.0,1.0,False,1091,,,
+57,medium_short,p02724,18,945,False,PARTIAL_70%,True,False,0.7,10,7,,1.0,1.0,False,679,,,
+58,medium_short,p03610,17,967,False,ALL_PASS,True,True,1.0,1,1,1.083,1.083,1.083,False,713,,,
+59,medium_short,p03679,18,917,False,ALL_PASS,True,True,1.0,10,10,1.0907,1.0907,1.0907,False,641,,,
+60,medium_short,p02391,19,784,False,ALL_PASS,True,True,1.0,10,10,0.9751,0.9751,1.0,False,536,,,
+61,medium_short,p03035,18,816,False,ALL_PASS,True,True,1.0,10,10,0.9386,0.9386,1.0,False,565,,,
+62,medium_short,p02860,19,1316,False,ALL_PASS,True,True,1.0,10,10,0.9416,0.9416,1.0,False,998,,,
+63,medium_short,p02403,16,1332,False,ALL_PASS,True,True,1.0,10,10,0.9563,0.9563,1.0,False,1027,,,
+64,medium_short,p02772,18,1223,False,ALL_PASS,True,True,1.0,10,10,1.015,1.015,1.015,False,915,,,
+65,medium_short,p03852,18,869,False,ALL_PASS,True,True,1.0,10,10,0.9793,0.9793,1.0,False,612,,,
+66,medium_short,p03000,21,1318,False,ALL_PASS,True,True,1.0,10,10,0.8726,0.8726,1.0,False,989,,,
+67,medium_short,p02640,18,847,False,ALL_PASS,True,True,1.0,10,10,0.9955,0.9955,1.0,False,590,,,
+68,medium_short,p03449,17,2601,False,ALL_PASS,True,True,1.0,10,10,0.9983,0.9983,1.0,False,2126,,,
+69,medium_short,p03657,20,1059,False,ALL_PASS,True,True,1.0,10,10,0.916,0.916,1.0,False,748,,,
+70,medium_short,p02388,21,667,False,ALL_PASS,True,True,1.0,1,1,0.8582,0.8582,1.0,False,470,,,
+71,medium_short,p02397,16,1079,False,ALL_PASS,True,True,1.0,10,10,1.013,1.013,1.013,False,800,,,
+72,medium_short,p02681,17,1250,False,ALL_PASS,True,True,1.0,10,10,1.0327,1.0327,1.0327,False,955,,,
+73,medium_short,p03080,18,6286,False,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,4096,"/tmp/tmpor2ve56n/gen.s: Assembler messages:
+/tmp/tmpor2ve56n/gen.s: Warning: end of file not at end of a line; newline inserted
+/tmp/tmpor2ve56n/gen.s:389: Error: unbalanced parenthesis in operand 1.
+/tmp/tmpor2ve56n/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
+",,
+74,medium_short,p02699,19,756,False,ALL_PASS,True,True,1.0,10,10,1.0133,1.0133,1.0133,False,524,,,
+75,medium_short,p03407,16,744,False,ALL_PASS,True,True,1.0,10,10,0.9534,0.9534,1.0,False,523,,,
+76,medium_short,p02578,21,1521,False,ALL_PASS,True,True,1.0,10,10,1.0419,1.0419,1.0419,False,1170,,,
+77,medium_short,p02393,20,1419,False,ALL_PASS,True,True,1.0,1,1,1.0526,1.0526,1.0526,False,1033,,,
+78,medium_short,p02393,21,1085,False,ALL_PASS,True,True,1.0,1,1,1.1015,1.1015,1.1015,False,766,,,
+79,medium_short,p02389,19,717,False,ALL_PASS,True,True,1.0,10,10,1.0633,1.0633,1.0633,False,494,,,
+80,medium_short,p00357,19,1892,False,ALL_PASS,True,True,1.0,10,10,0.9878,0.9878,1.0,False,1446,,,
+81,medium_short,p00292,17,1587,False,ALL_PASS,True,True,1.0,1,1,0.8707,0.8707,1.0,False,1246,,,
+82,medium_short,p03631,17,857,False,ALL_PASS,True,True,1.0,10,10,0.9479,0.9479,1.0,False,610,,,
+83,medium_short,p02392,17,766,False,ALL_PASS,True,True,1.0,10,10,0.9853,0.9853,1.0,False,532,,,
+84,medium_short,p03303,19,961,False,ALL_PASS,True,True,1.0,10,10,0.9781,0.9781,1.0,False,674,,,
+85,medium_short,p02945,17,911,False,ALL_PASS,True,True,1.0,1,1,1.0189,1.0189,1.0189,False,635,,,
+86,medium_short,p02390,18,1419,False,ALL_PASS,True,True,1.0,10,10,1.0717,1.0717,1.0717,False,1077,,,
+87,medium_short,p02705,16,973,False,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,699,,,
+88,medium_short,p02398,21,907,False,ALL_PASS,True,True,1.0,10,10,0.8874,0.8874,1.0,False,644,,,
+89,medium_short,p02951,20,982,False,PARTIAL_20%,True,False,0.2,10,2,,1.0,1.0,False,676,,,
+90,medium_short,p02523,18,1349,False,COMPILE_FAIL,True,False,-1.0,0,0,,1.0,1.0,False,999,,,
+91,medium_short,p02397,17,1156,False,ALL_PASS,True,True,1.0,10,10,1.0195,1.0195,1.0195,False,860,,,
+92,medium_short,p03265,21,1275,False,ALL_PASS,True,True,1.0,10,10,0.9919,0.9919,1.0,False,897,,,
+93,medium_short,p03135,17,748,False,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,479,,,
+94,medium_short,p00586,20,1038,False,ALL_PASS,True,True,1.0,10,10,0.985,0.985,1.0,False,729,,,
+95,medium_short,p03328,20,958,False,PARTIAL_70%,True,False,0.7,10,7,,1.0,1.0,False,665,,,
+96,medium_short,p02485,18,1159,False,COMPILE_FAIL,True,False,-1.0,0,0,,1.0,1.0,False,848,,,
+97,medium_short,p02407,16,1359,False,ALL_PASS,True,True,1.0,10,10,1.0523,1.0523,1.0523,False,1056,,,
+98,medium_short,p02421,20,1496,False,ALL_PASS,True,True,1.0,10,10,0.995,0.995,1.0,False,1143,,,
+99,medium_short,p02407,16,1262,False,ALL_PASS,True,True,1.0,10,10,0.9818,0.9818,1.0,False,962,,,
+100,medium_short,p02887,17,1229,False,ALL_PASS,True,True,1.0,10,10,0.9783,0.9783,1.0,False,915,,,
+101,medium_long,p02258,26,1427,False,ALL_PASS,True,True,1.0,10,10,1.0266,1.0266,1.0266,False,1069,,,
+102,medium_long,p03434,26,2647,False,ALL_PASS,True,True,1.0,10,10,0.9472,0.9472,1.0,False,2135,,,
+103,medium_long,p02411,28,1682,False,ALL_PASS,True,True,1.0,10,10,0.9866,0.9866,1.0,False,1233,,,
+104,medium_long,p00004,24,1822,False,ALL_PASS,True,True,1.0,10,10,0.9108,0.9108,1.0,False,1418,,,
+105,medium_long,p02404,29,2010,False,PARTIAL_70%,True,False,0.7,10,7,,1.0,1.0,False,1559,,,
+106,medium_long,p03993,22,1327,False,ALL_PASS,True,True,1.0,10,10,0.9778,0.9778,1.0,False,978,,,
+107,medium_long,p00079,24,3672,False,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,3013,,,
+108,medium_long,p04012,24,1151,False,ALL_PASS,True,True,1.0,10,10,1.0188,1.0188,1.0188,False,831,,,
+109,medium_long,p00314,24,2120,False,ALL_PASS,True,True,1.0,10,10,1.0263,1.0263,1.0263,False,1673,,,
+110,medium_long,p02416,27,5091,False,ALL_PASS,True,True,1.0,10,10,1.0114,1.0114,1.0114,False,3740,,,
+111,medium_long,p03632,22,854,False,ALL_PASS,True,True,1.0,10,10,0.9684,0.9684,1.0,False,571,,,
+112,medium_long,p02624,28,2434,False,PARTIAL_30%,True,False,0.3,10,3,,1.0,1.0,False,1899,,,
+113,medium_long,p00534,29,4331,False,ALL_PASS,True,True,1.0,10,10,0.978,0.978,1.0,False,3656,,,
+114,medium_long,p03370,27,1757,False,PARTIAL_70%,True,False,0.7,10,7,,1.0,1.0,False,1332,,,
+115,medium_long,p03160,27,4596,False,ALL_PASS,True,True,1.0,10,10,1.0214,1.0214,1.0214,False,3957,,,
+116,medium_long,p00033,28,2732,False,ALL_PASS,True,True,1.0,10,10,0.8796,0.8796,1.0,False,2185,,,
+117,medium_long,p00005,23,1836,False,ALL_PASS,True,True,1.0,10,10,0.9451,0.9451,1.0,False,1446,,,
+118,medium_long,p02271,25,3348,False,ALL_PASS,True,True,1.0,10,10,0.9499,0.9499,1.0,False,2794,,,
+119,medium_long,p02880,23,1448,False,PARTIAL_90%,True,False,0.9,10,9,,1.0,1.0,False,1136,,,
+120,medium_long,p02398,22,1068,False,PARTIAL_90%,True,False,0.9,10,9,,1.0,1.0,False,739,,,
+121,medium_long,p03632,27,887,False,ALL_PASS,True,True,1.0,10,10,1.0163,1.0163,1.0163,False,604,,,
+122,medium_long,p03031,23,3369,False,PARTIAL_90%,True,False,0.9,10,9,,1.0,1.0,False,2775,,,
+123,medium_long,p02397,24,1227,False,ALL_PASS,True,True,1.0,10,10,1.0266,1.0266,1.0266,False,906,,,
+124,medium_long,p02405,27,1537,False,ALL_PASS,True,True,1.0,10,10,1.0081,1.0081,1.0081,False,1171,,,
+125,medium_long,p00136,29,2018,False,ALL_PASS,True,True,1.0,10,10,0.9135,0.9135,1.0,False,1532,,,
+126,medium_long,p02407,28,2530,False,ALL_PASS,True,True,1.0,10,10,1.0114,1.0114,1.0114,False,2043,,,
+127,medium_long,p02402,22,1507,False,ALL_PASS,True,True,1.0,10,10,1.1266,1.1266,1.1266,False,1132,,,
+128,medium_long,p02260,27,2051,False,ALL_PASS,True,True,1.0,10,10,0.9676,0.9676,1.0,False,1569,,,
+129,medium_long,p03399,22,842,False,ALL_PASS,True,True,1.0,10,10,0.9831,0.9831,1.0,False,576,,,
+130,medium_long,p02393,27,1049,False,ALL_PASS,True,True,1.0,1,1,0.9484,0.9484,1.0,False,716,,,
+131,medium_long,p02257,24,1630,False,ALL_PASS,True,True,1.0,10,10,0.9904,0.9904,1.0,False,1229,,,
+132,medium_long,p02700,25,1305,False,ALL_PASS,True,True,1.0,10,10,0.9951,0.9951,1.0,False,997,,,
+133,medium_long,p02487,22,1595,False,COMPILE_FAIL,True,False,-1.0,0,0,,1.0,1.0,False,1200,,,
+134,medium_long,p00025,24,2122,False,ALL_PASS,True,True,1.0,10,10,1.0537,1.0537,1.0537,False,1641,,,
+135,medium_long,p02417,24,1373,False,ALL_PASS,True,True,1.0,10,10,0.9568,0.9568,1.0,False,999,,,
+136,medium_long,p00097,24,10095,False,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,4096,"/tmp/tmp_04gj72d/gen.s: Assembler messages:
+/tmp/tmp_04gj72d/gen.s: Warning: end of file not at end of a line; newline inserted
+/tmp/tmp_04gj72d/gen.s:154: Error: bad register name `%8(%rsp)'
+/tmp/tmp_04gj72d/gen.s:406: Error: number of operands mismatch for `add'
+/tmp/tmp_04gj72d/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
+",,
+137,medium_long,p03564,30,1052,False,ALL_PASS,True,True,1.0,10,10,1.0322,1.0322,1.0322,False,734,,,
+138,medium_long,p02268,28,2050,False,PARTIAL_30%,True,False,0.3,10,3,,1.0,1.0,False,1596,,,
+139,medium_long,p03434,27,1762,False,PARTIAL_80%,True,False,0.8,10,8,,1.0,1.0,False,1347,,,
+140,medium_long,p02952,27,1319,False,ALL_PASS,True,True,1.0,10,10,0.9616,0.9616,1.0,False,929,,,
+141,medium_long,p02233,30,3409,False,ALL_PASS,True,True,1.0,10,10,1.0327,1.0327,1.0327,False,2871,,,
+142,medium_long,p02743,24,1227,False,ALL_PASS,True,True,1.0,10,10,1.0429,1.0429,1.0429,False,834,,,
+143,medium_long,p00004,28,1993,False,ALL_PASS,True,True,1.0,10,10,0.9479,0.9479,1.0,False,1473,,,
+144,medium_long,p02842,30,1349,False,ALL_PASS,True,True,1.0,10,10,0.9498,0.9498,1.0,False,987,,,
+145,medium_long,p02771,25,1079,False,PARTIAL_70%,True,False,0.7,10,7,,1.0,1.0,False,746,,,
+146,medium_long,p00022,25,1985,False,ALL_PASS,True,True,1.0,10,10,1.0535,1.0535,1.0535,False,1564,,,
+147,medium_long,p02613,23,2208,False,ALL_PASS,True,True,1.0,3,3,0.9944,0.9944,1.0,False,1727,,,
+148,medium_long,p02860,30,7030,False,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,4096,"/tmp/tmpdbov5_js/gen.s: Assembler messages:
+/tmp/tmpdbov5_js/gen.s: Warning: end of file not at end of a line; newline inserted
+/tmp/tmpdbov5_js/gen.s:382: Error: number of operands mismatch for `cmp'
+/tmp/tmpdbov5_js/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
+",,
+149,medium_long,p02753,23,1225,False,ALL_PASS,True,True,1.0,10,10,0.9877,0.9877,1.0,False,839,,,
+150,medium_long,p00515,23,1109,False,ALL_PASS,True,True,1.0,10,10,1.0383,1.0383,1.0383,False,815,,,
+151,long,p00460,32,2152,False,ALL_PASS,True,True,1.0,10,10,0.9813,0.9813,1.0,False,1671,,,
+152,long,p02257,43,2746,False,ALL_PASS,True,True,1.0,10,10,0.9433,0.9433,1.0,False,2171,,,
+153,long,p02238,65,11092,False,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,4096,"/tmp/tmps7da18nd/gen.s: Assembler messages:
+/tmp/tmps7da18nd/gen.s: Warning: end of file not at end of a line; newline inserted
+/tmp/tmps7da18nd/gen.s:413: Error: unbalanced parenthesis in operand 2.
+/tmp/tmps7da18nd/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
+",,
+154,long,p02268,37,2282,False,PARTIAL_30%,True,False,0.3,10,3,,1.0,1.0,False,1756,,,
+155,long,p02263,68,2387,False,ALL_PASS,True,True,1.0,10,10,1.0777,1.0777,1.0777,False,1803,,,
+156,long,p02284,154,8344,False,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,4096,"/tmp/tmpe_2po4ll/gen.s: Assembler messages:
+/tmp/tmpe_2po4ll/gen.s: Warning: end of file not at end of a line; newline inserted
+/tmp/tmpe_2po4ll/gen.s:529: Error: number of operands mismatch for `mov'
+/tmp/tmpe_2po4ll/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
+",,
+157,long,p00447,69,3539,False,PARTIAL_10%,True,False,0.1,10,1,,1.0,1.0,False,2728,,,
+158,long,p02263,44,1940,False,ALL_PASS,True,True,1.0,10,10,1.0093,1.0093,1.0093,False,1420,,,
+159,long,p02262,74,4009,False,ALL_PASS,True,True,1.0,10,10,1.0439,1.0439,1.0439,False,3130,,,
+160,long,p00502,46,6551,False,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,4096,"/tmp/tmp948dpxlh/gen.s: Assembler messages:
+/tmp/tmp948dpxlh/gen.s: Warning: end of file not at end of a line; newline inserted
+/tmp/tmp948dpxlh/gen.s:441: Error: number of operands mismatch for `mov'
+/tmp/tmp948dpxlh/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
+",,
+161,long,p02255,41,2063,False,ALL_PASS,True,True,1.0,10,10,1.0095,1.0095,1.0095,False,1573,,,
+162,long,p00637,31,2022,False,ALL_PASS,True,True,1.0,10,10,0.9781,0.9781,1.0,False,1564,,,
+163,long,p00071,45,5981,False,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,4096,"/tmp/tmpa2ul0qnw/gen.s: Assembler messages:
+/tmp/tmpa2ul0qnw/gen.s: Warning: end of file not at end of a line; newline inserted
+/tmp/tmpa2ul0qnw/gen.s:436: Error: expecting operand after ','; got nothing
+/tmp/tmpa2ul0qnw/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
+",,
+164,long,p02622,37,5523,False,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,4096,"/tmp/tmp4_llk4pe/gen.s: Assembler messages:
+/tmp/tmp4_llk4pe/gen.s: Warning: end of file not at end of a line; newline inserted
+/tmp/tmp4_llk4pe/gen.s:531: Error: number of operands mismatch for `add'
+/tmp/tmp4_llk4pe/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
+",,
+165,long,p02244,70,4601,False,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,3707,"/tmp/tmp57gj06ei/gen.s: Assembler messages:
+/tmp/tmp57gj06ei/gen.s: Warning: end of file not at end of a line; newline inserted
+/usr/bin/ld: /tmp/ccxurLRr.o: in function `printBoard':
+x.c:(.text+0x134): undefined reference to `.38'
 collect2: error: ld returned 1 exit status
 ",,
-123,medium_long,p02397,24,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,858,,,
-124,medium_long,p02405,27,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,889,,,
-125,medium_long,p00136,29,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1432,,,
-126,medium_long,p02407,28,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1739,,,
-127,medium_long,p02402,22,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1018,,,
-128,medium_long,p02260,27,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1661,,,
-129,medium_long,p03399,22,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,728,,,
-130,medium_long,p02393,27,ALL_PASS,True,True,1.0,1,1,,1.0,1.0,False,863,,,
-131,medium_long,p02257,24,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,996,,,
-132,medium_long,p02700,25,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,954,,,
-133,medium_long,p02487,22,COMPILE_FAIL,True,False,-1.0,0,0,,1.0,1.0,False,922,,,
-134,medium_long,p00025,24,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1240,,,
-135,medium_long,p02417,24,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1201,,,
-136,medium_long,p00097,24,PARTIAL_10%,True,False,0.1,10,1,,1.0,1.0,False,3159,,,
-137,medium_long,p03564,30,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,902,,,
-138,medium_long,p02268,28,PARTIAL_30%,True,False,0.3,10,3,,1.0,1.0,False,1608,,,
-139,medium_long,p03434,27,PARTIAL_80%,True,False,0.8,10,8,,1.0,1.0,False,1764,,,
-140,medium_long,p02952,27,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,900,,,
-141,medium_long,p02233,30,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1222,,,
-142,medium_long,p02743,24,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1198,,,
-143,medium_long,p00004,28,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,1903,,,
-144,medium_long,p02842,30,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,884,,,
-145,medium_long,p02771,25,PARTIAL_70%,True,False,0.7,10,7,,1.0,1.0,False,1109,,,
-146,medium_long,p00022,25,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1437,,,
-147,medium_long,p02613,23,ALL_PASS,True,True,1.0,3,3,,1.0,1.0,False,990,,,
-148,medium_long,p02860,30,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1050,,,
-149,medium_long,p02753,23,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1066,,,
-150,medium_long,p00515,23,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,705,,,
-151,long,p00460,32,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1455,,,
-152,long,p02257,43,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1883,,,
-153,long,p02238,65,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,2528,,,
-154,long,p02268,37,PARTIAL_20%,True,False,0.2,10,2,,1.0,1.0,False,1792,,,
-155,long,p02263,68,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1423,,,
-156,long,p02284,154,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,4096,"/tmp/tmp8p3eky0f/gen.s: Assembler messages:
-/tmp/tmp8p3eky0f/gen.s: Warning: end of file not at end of a line; newline inserted
-/tmp/tmp8p3eky0f/gen.s:521: Error: unbalanced parenthesis in operand 1.
-/tmp/tmp8p3eky0f/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
+166,long,p02922,31,1035,False,ALL_PASS,True,True,1.0,10,10,0.9576,0.9576,1.0,False,670,,,
+167,long,p00104,40,2726,False,PARTIAL_40%,True,False,0.4,10,4,,1.0,1.0,False,2087,,,
+168,long,p02237,50,4206,False,PARTIAL_90%,True,False,0.9,10,9,,1.0,1.0,False,3485,,,
+169,long,p04045,55,2558,False,ALL_PASS,True,True,1.0,1,1,0.9762,0.9762,1.0,False,1947,,,
+170,long,p02678,71,3523,False,ALL_PASS,True,True,1.0,10,10,1.0035,1.0035,1.0035,False,2656,,,
+171,long,p03970,70,6924,False,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,4096,"/tmp/tmp9yr112lo/gen.s: Assembler messages:
+/tmp/tmp9yr112lo/gen.s: Warning: end of file not at end of a line; newline inserted
+/tmp/tmp9yr112lo/gen.s:479: Error: unknown pseudo-op: `.lfe'
 ",,
-157,long,p00447,69,PARTIAL_10%,True,False,0.1,10,1,,1.0,1.0,False,2417,,,
-158,long,p02263,44,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1365,,,
-159,long,p02262,74,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,3182,,,
-160,long,p00502,46,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,4096,"/tmp/tmpebgmgi1l/gen.s: Assembler messages:
-/tmp/tmpebgmgi1l/gen.s: Warning: end of file not at end of a line; newline inserted
-/tmp/tmpebgmgi1l/gen.s:439: Error: unknown pseudo-op: `.l'
-/tmp/tmpebgmgi1l/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
+172,long,p02285,176,9219,False,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,4096,"/tmp/tmpkejl97ux/gen.s: Assembler messages:
+/tmp/tmpkejl97ux/gen.s: Warning: end of file not at end of a line; newline inserted
+/tmp/tmpkejl97ux/gen.s:520: Error: bad register name `%r'
+/tmp/tmpkejl97ux/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
 ",,
-161,long,p02255,41,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1402,,,
-162,long,p00637,31,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1161,,,
-163,long,p00071,45,PARTIAL_40%,True,False,0.4,10,4,,1.0,1.0,False,2674,,,
-164,long,p02622,37,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,3109,,,
-165,long,p02244,70,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,2931,,,
-166,long,p02922,31,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,817,,,
-167,long,p00104,40,PARTIAL_50%,True,False,0.5,10,5,,1.0,1.0,False,2890,,,
-168,long,p02237,50,PARTIAL_90%,True,False,0.9,10,9,,1.0,1.0,False,2125,,,
-169,long,p04045,55,ALL_PASS,True,True,1.0,1,1,,1.0,1.0,False,1920,,,
-170,long,p02678,71,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,3939,,,
-171,long,p03970,70,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,3034,,,
-172,long,p02285,176,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,4096,"/tmp/tmp6q6r3ud9/gen.s: Assembler messages:
-/tmp/tmp6q6r3ud9/gen.s: Warning: end of file not at end of a line; newline inserted
-/tmp/tmp6q6r3ud9/gen.s:524: Error: number of operands mismatch for `mov'
-/tmp/tmp6q6r3ud9/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
+173,long,p02271,38,3483,False,ALL_PASS,True,True,1.0,10,10,1.0798,1.0798,1.0798,False,2853,,,
+174,long,p02280,79,10951,False,COMPILE_FAIL,False,False,-1.0,2,0,,1.0,1.0,False,4096,"/tmp/tmp8no38c2p/gen.s: Assembler messages:
+/tmp/tmp8no38c2p/gen.s: Warning: end of file not at end of a line; newline inserted
+/tmp/tmp8no38c2p/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
 ",,
-173,long,p02271,38,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1582,,,
-174,long,p02280,79,COMPILE_FAIL,False,False,-1.0,2,0,,1.0,1.0,False,4096,"/tmp/tmp9bf44jlo/gen.s: Assembler messages:
-/tmp/tmp9bf44jlo/gen.s: Warning: end of file not at end of a line; newline inserted
-/tmp/tmp9bf44jlo/gen.s:490: Error: number of operands mismatch for `mov'
-/tmp/tmp9bf44jlo/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
+175,long,p00576,33,1845,False,ALL_PASS,True,True,1.0,1,1,0.9995,0.9995,1.0,False,1409,,,
+176,long,p00048,35,2480,False,ALL_PASS,True,True,1.0,1,1,1.0388,1.0388,1.0388,False,1882,,,
+177,long,p02281,130,17714,True,PROMPT_TOO_LONG,False,False,-1,,,,1.0,1.0,False,0,,,
+178,long,p02391,44,778,False,ALL_PASS,True,True,1.0,10,10,0.997,0.997,1.0,False,536,,,
+179,long,p00436,85,5651,False,COMPILE_FAIL,False,False,-1.0,1,0,,1.0,1.0,False,4096,"/tmp/tmp51u6zgtw/gen.s: Assembler messages:
+/tmp/tmp51u6zgtw/gen.s: Warning: end of file not at end of a line; newline inserted
+/tmp/tmp51u6zgtw/gen.s:479: Error: number of operands mismatch for `pop'
+/tmp/tmp51u6zgtw/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
 ",,
-175,long,p00576,33,ALL_PASS,True,True,1.0,1,1,,1.0,1.0,False,1634,,,
-176,long,p00048,35,ALL_PASS,True,True,1.0,1,1,,1.0,1.0,False,1883,,,
-177,long,p02281,130,COMPILE_FAIL,False,False,-1.0,5,0,,1.0,1.0,False,4096,"/tmp/tmppseep49m/gen.s: Assembler messages:
-/tmp/tmppseep49m/gen.s: Warning: end of file not at end of a line; newline inserted
-/tmp/tmppseep49m/gen.s:547: Error: no such instruction: `le'
-/tmp/tmppseep49m/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
+180,long,p02235,39,2965,False,ALL_PASS,True,True,1.0,10,10,1.0351,1.0351,1.0351,False,2339,,,
+181,long,p02888,36,3037,False,ALL_PASS,True,True,1.0,10,10,1.0073,1.0073,1.0073,False,2446,,,
+182,long,p03607,69,3230,False,ALL_PASS,True,True,1.0,10,10,0.9302,0.9302,1.0,False,2307,,,
+183,long,p02234,50,3359,False,ALL_PASS,True,True,1.0,10,10,0.9765,0.9765,1.0,False,2659,,,
+184,long,p03273,68,3051,False,ALL_PASS,True,True,1.0,10,10,1.0306,1.0306,1.0306,False,2208,,,
+185,long,p03289,50,2033,False,ALL_PASS,True,True,1.0,10,10,1.0652,1.0652,1.0652,False,1484,,,
+186,long,p00769,45,2812,False,ALL_PASS,True,True,1.0,10,10,0.9976,0.9976,1.0,False,2173,,,
+187,long,p02408,61,5497,False,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,4096,"/tmp/tmpikact_vp/gen.s: Assembler messages:
+/tmp/tmpikact_vp/gen.s: Warning: end of file not at end of a line; newline inserted
+/tmp/tmpikact_vp/gen.s:354: Error: symbol `.L189' is already defined
+/tmp/tmpikact_vp/gen.s:509: Error: no such instruction: `cm'
+/tmp/tmpikact_vp/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
 ",,
-178,long,p02391,44,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,623,,,
-179,long,p00436,85,COMPILE_FAIL,False,False,-1.0,1,0,,1.0,1.0,False,3730,"/tmp/tmpqe6uln6x/gen.s: Assembler messages:
-/tmp/tmpqe6uln6x/gen.s: Warning: end of file not at end of a line; newline inserted
-/usr/bin/ld: /tmp/ccoioqIc.o: in function `shuffle':
-x.c:(.text+0x7e): undefined reference to `.L4'
-collect2: error: ld returned 1 exit status
+188,long,p03503,71,12183,False,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,4096,"/tmp/tmputzaz4wm/gen.s: Assembler messages:
+/tmp/tmputzaz4wm/gen.s: Warning: end of file not at end of a line; newline inserted
+/tmp/tmputzaz4wm/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
 ",,
-180,long,p02235,39,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,3413,,,
-181,long,p02888,36,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,2339,,,
-182,long,p03607,69,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,2546,,,
-183,long,p02234,50,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,3657,,,
-184,long,p03273,68,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,2179,,,
-185,long,p03289,50,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1085,,,
-186,long,p00769,45,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1899,,,
-187,long,p02408,61,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1776,,,
-188,long,p03503,71,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,4083,"/tmp/tmpk06jr9ig/gen.s: Assembler messages:
-/tmp/tmpk06jr9ig/gen.s: Warning: end of file not at end of a line; newline inserted
-/tmp/tmpk06jr9ig/gen.s:539: Error: unbalanced parenthesis in operand 2.
-/tmp/tmpk06jr9ig/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
+189,long,p02234,40,2556,False,ALL_PASS,True,True,1.0,10,10,0.9708,0.9708,1.0,False,2005,,,
+190,long,p03238,102,4095,False,ALL_PASS,True,True,1.0,10,10,1.0268,1.0268,1.0268,False,3113,,,
+191,long,p03107,77,2512,False,ALL_PASS,True,True,1.0,10,10,1.0074,1.0074,1.0074,False,1762,,,
+192,long,p02748,37,4339,False,PARTIAL_90%,True,False,0.9,10,9,,1.0,1.0,False,3567,,,
+193,long,p02263,40,1903,False,ALL_PASS,True,True,1.0,10,10,1.0015,1.0015,1.0015,False,1429,,,
+194,long,p02532,68,2867,False,COMPILE_FAIL,True,False,-1.0,0,0,,1.0,1.0,False,2190,,,
+195,long,p03632,45,2378,False,COMPILE_FAIL,False,False,-1.0,10,0,,1.0,1.0,False,1764,"/tmp/tmpe_mo0o_d/gen.s: Assembler messages:
+/tmp/tmpe_mo0o_d/gen.s: Warning: end of file not at end of a line; newline inserted
+/tmp/tmpe_mo0o_d/gen.s:177: Error: CFI state restore without previous remember
 ",,
-189,long,p02234,40,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,2073,,,
-190,long,p03238,102,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,2862,,,
-191,long,p03107,77,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1653,,,
-192,long,p02748,37,PARTIAL_40%,True,False,0.4,10,4,,1.0,1.0,False,3561,,,
-193,long,p02263,40,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,1318,,,
-194,long,p02532,68,COMPILE_FAIL,True,False,-1.0,0,0,,1.0,1.0,False,2630,,,
-195,long,p03632,45,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,2448,,,
-196,long,p02279,79,ALL_PASS,True,True,1.0,2,2,,1.0,1.0,False,3638,,,
-197,long,p02279,86,COMPILE_FAIL,False,False,-1.0,2,0,,1.0,1.0,False,4096,"/tmp/tmp6gqukj6f/gen.s: Assembler messages:
-/tmp/tmp6gqukj6f/gen.s: Warning: end of file not at end of a line; newline inserted
-/tmp/tmp6gqukj6f/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
+196,long,p02279,79,6384,False,COMPILE_FAIL,False,False,-1.0,2,0,,1.0,1.0,False,4096,"/tmp/tmpr8ic4jzt/gen.s: Assembler messages:
+/tmp/tmpr8ic4jzt/gen.s: Warning: end of file not at end of a line; newline inserted
+/tmp/tmpr8ic4jzt/gen.s:453: Error: unbalanced parenthesis in operand 2.
+/tmp/tmpr8ic4jzt/gen.s: Error: open CFI at the end of file; missing .cfi_endproc directive
 ",,
-198,long,p02397,40,ALL_PASS,True,True,1.0,10,10,,1.0,1.0,False,678,,,
-199,long,p02327,75,PARTIAL_10%,True,False,0.1,10,1,,1.0,1.0,False,3034,,,
-200,long,p02400,33,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,859,,,
+197,long,p02279,86,4964,False,ALL_PASS,True,True,1.0,2,2,1.0102,1.0102,1.0102,False,3926,,,
+198,long,p02397,40,1449,False,ALL_PASS,True,True,1.0,10,10,0.983,0.983,1.0,False,861,,,
+199,long,p02327,75,4406,False,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,3411,,,
+200,long,p02400,33,1103,False,PARTIAL_0%,True,False,0.0,10,0,,1.0,1.0,False,657,,,
